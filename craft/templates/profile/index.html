@@ -1,0 +1,12 @@
+{% extends "_layout" %}
+{% set title = "Profile" %}
+
+{% block content %}
+	<h1>Profiles</h1>
+
+	{% set users = craft.users %}
+	{% for user in users %}
+	    <a href="{{ siteUrl }}profile/{{ user }}">{{ user }}</a>
+	{% endfor %}
+
+{% endblock %}

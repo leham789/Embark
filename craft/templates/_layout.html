@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
+
+<head>
+	<meta charset="utf-8" />
+	<title>{% if title is defined %}{{ title }} | {{ siteName }}{% else %}{{ site.siteTagline }}{% endif %}</title>
+	<link rel="home" href="{{ siteUrl }}" />
+
+	{% set favicon = site.siteFavicon.image.first() %}
+	<link rel="icon" href="{{ siteUrl }}{{ favicon.url }}">
+
+	<meta name="description" content="{{ site.siteDescription }}">
+	<meta name="keywords" content="{% for tag in site.siteKeywords %}{{ tag }}, {% endfor %}">
+	<meta name="author" content="{{ site.siteAuthor }}">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
+
+	<link rel="stylesheet" href="{{ siteUrl }}assets/css/main.css" />
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<header id="header">
+
+			<h1><a href="{{ siteUrl }}">{{ siteName }}</a></h1>
+
+		</header>
+
+		<div class="">
+
+			{{ user.username }}
+
+		</div>
+
+	</div>
+
+
+		<main id="content" role="main">
+			{% block content %}
+
+			{% endblock %}
+		</main>
+
+
+		<div class="container">
+
+			<footer id="footer">
+				<!-- Copyright {{ now.year }} Embark -->
+			</footer>
+
+		</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/0a8bd07c77.js"></script>
+
+<script src="{{ siteUrl }}assets/js/script-min.js"></script>
+
+</body>
+</html>
