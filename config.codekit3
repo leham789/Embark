@@ -28052,6 +28052,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/82\/82ad34d0a59f61e3f6ee9025e42a9953a3dca4ed7909a614303fef60b135dcab.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/87\/874a9cab9fb1a119bc7b14a3d2b9b13e25f94a84ca51361c69a9de70c982c416.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/87\/874a9cab9fb1a119bc7b14a3d2b9b13e25f94a84ca51361c69a9de70c982c416.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/87\/87753e0d3d9c5db45901bb70202185326c22f071ddaf4cc6ecbe6b465d14575a.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -28936,6 +28943,24 @@
 		"oA": 0,
 		"oAP": "\/index.php",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/robots.txt": {
 		"cB": 0,
