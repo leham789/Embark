@@ -1,3 +1,68 @@
 h1{
   font-size: 30px;
 }
+
+header{
+  background: $brand-gradient;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: $white;
+  border-top: $light-grey 1px solid;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+
+    li{
+      width: 25%;
+      padding: 10px;
+      float: left;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      list-style: none;
+      text-align: center;
+
+      a {
+        text-align: center;
+        display: block;
+        color: $grey;
+        text-align: center;
+        text-decoration: none;
+        font-size: $nav-font;
+
+        &:hover {
+          color: $brand-dark;
+        }
+      }
+
+      .svg{
+        path {
+          fill: $grey;
+        }
+        polygon {
+          fill: $grey;
+        }
+      }
+
+      &.active{
+        a {
+         color: $brand-dark;
+        }
+        .svg{
+          path {
+            fill: $brand-dark;
+          }
+          polygon {
+            fill: $brand-dark;
+          }
+        }
+      }
+    }
+  }
+}

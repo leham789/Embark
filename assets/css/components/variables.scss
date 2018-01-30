@@ -6,6 +6,11 @@ $black: #000000;
 $white: #ffffff;
 $brand-light: #40F5E7;
 $brand-dark: #40BBC0;
+$grey: #A2A2A2;
+$light-grey: #F4F4F4;
+
+$brand-gradient: linear-gradient(-215deg, $brand-light 0%, $brand-dark 100%);;
+
 
 //Media Queries
 $break-small: 560px;
@@ -16,5 +21,6 @@ $break-large: 1200px;
 $large-font: 2.5em;
 $menu-font: 2.2em;
 $header-font: 1.3em;
+$nav-font: 0.7em;
 $small-font: 1em;
 $paragraph-font: 1.25em;

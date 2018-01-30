@@ -20,7 +20,7 @@
 
 <body>
 
-	<div class="container">
+	<div class="">
 
 		<header id="header">
 
@@ -32,12 +32,39 @@
 
 			{{ user.username }}
 
+			{% if currentUser %}
+			    <a href="{{ url('logout') }}">Logout</a>
+			{% else %}
+			    <a href="{{ url('login') }}">Login</a>
+			{% endif %}
+
+		</div>
+
+		<div class="navbar">
+			<ul>
+				<li {% if craft.request.firstSegment == "" %}class="active"{% endif %}>
+					<img class="svg" src="{{ siteUrl }}assets/img/site/explore-icon.svg" alt="explore"/>
+					<a href="/">Explore</a>
+				</li>
+				<li {% if craft.request.firstSegment == "search" %}class="active"{% endif %}>
+					<img class="svg" src="{{ siteUrl }}assets/img/site/search-icon.svg" alt="explore"/>
+					<a href="#Search">Search</a>
+				</li>
+				<li {% if craft.request.firstSegment == "favorites" %}class="active"{% endif %}>
+					<img class="svg" src="{{ siteUrl }}assets/img/site/favorites-icon.svg" alt="explore"/>
+					<a href="#Favorites">Favorites</a>
+				</li>
+				<li {% if craft.request.firstSegment == "profile" %}class="active"{% endif %}>
+					<img class="svg" src="{{ siteUrl }}assets/img/site/profile-icon.svg" alt="explore"/>
+					<a href="/profile">Profile</a>
+				</li>
+			</ul>
 		</div>
 
 	</div>
 
 
-		<main id="content" role="main">
+		<main id="content" role="main" style="padding-bottom:2000px;">
 			{% block content %}
 
 			{% endblock %}
