@@ -1,5 +1,6 @@
 {% extends "_layout" %}
 {% block content %}
+{% requireLogin %}
 {% set user = craft.users.username( craft.request.segment(2) ).first() %}
 
 	<h1>{{ entry.title }}</h1>
@@ -14,7 +15,6 @@
 
       <label for="bio">Bio</label>
       <textarea id="bio" name="fields[bio]">{{ currentUser.bio }}</textarea>
-
       <input type="submit" value="Save Profile">
   </form>
 

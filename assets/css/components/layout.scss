@@ -1,9 +1,32 @@
-h1{
-  font-size: 30px;
-}
-
 header{
   background: $brand-gradient;
+  height: 110px;
+
+  h1{
+    color: $white;
+    padding: 25px 0 0 0;
+    margin:0px;
+  }
+
+  a{
+    color: $white;
+    display: inline-block;
+  }
+
+  p{
+    margin: 0px;
+    padding: 0px;
+    color: $white;
+    display: inline-block;
+  }
+  .half{
+    width: 49%;
+    display: inline-block;
+
+    &:last-child{
+      text-align: right;
+    }
+  }
 }
 
 .navbar {
@@ -36,8 +59,9 @@ header{
         text-decoration: none;
         font-size: $nav-font;
 
-        &:hover {
-          color: $brand-dark;
+        p{
+          padding:2px 0 0 0;
+          margin: 0px;
         }
       }
 

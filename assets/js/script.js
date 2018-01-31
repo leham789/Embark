@@ -1,7 +1,5 @@
 //Script
 
-
-
 //SVG Image to Outline
 $(function(){
     jQuery('img.svg').each(function(){
@@ -13,7 +11,6 @@ $(function(){
         jQuery.get(imgURL, function(data) {
             // Get the SVG tag, ignore the rest
             var $svg = jQuery(data).find('svg');
-
             // Add replaced image's ID to the new SVG
             if(typeof imgID !== 'undefined') {
                 $svg = $svg.attr('id', imgID);
@@ -22,19 +19,20 @@ $(function(){
             if(typeof imgClass !== 'undefined') {
                 $svg = $svg.attr('class', imgClass+' replaced-svg');
             }
-
             // Remove any invalid XML tags as per http://validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');
-
             // Check if the viewport is set, else we gonna set it if we can.
             if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
                 $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
             }
-
             // Replace image with new SVG
             $img.replaceWith($svg);
-
         }, 'xml');
-
     });
 });
+
+
+//Whole li clickable for the a inside
+// $("#navbar-list li").click(function(){
+//         location.href = $(this).find("a").attr("href");
+// });

@@ -1,16 +1,32 @@
 {% extends "_layout" %}
+{% requireLogin %}
 {% set user = craft.users.username( craft.request.segment(2) ).first() %}
+{% if not user %}
+   {% exit 404 %}
+{% endif %}
+
+{% set title = user.username %}
+
+{% set search = user %}
 
 {% block content %}
 
-		<h1>{{ entry.title }}</h1>
-		{{ entry.body }}
+<div class="profile-page">
 
-		<img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+  <h1>{{ user.username }}</h1>
+  {{ entry.body }}
+
+  <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
 
 
-		{{ user.fullname }}
-		{{ user.email }}
-		{{ user.bio }}
+  <p>{{ user.fullname }}</p>
+  <p>{{ user.email }}</p>
+  <p>{{ user.bio }}</p>
+
+  <a href="{{ craft.request.url }}/settings">settings</a>
+
+</div>
+
+
 
 {% endblock %}

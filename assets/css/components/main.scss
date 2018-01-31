@@ -1,5 +1,40 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Medium.eot');
+    src: url('/assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Gilroy-Medium.woff') format('woff'),
+        url('/assets/fonts/Gilroy-Medium.ttf') format('truetype'),
+        url('/assets/fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Light.eot');
+    src: url('/assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Gilroy-Light.woff') format('woff'),
+        url('/assets/fonts/Gilroy-Light.ttf') format('truetype'),
+        url('/assets/fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body, label, p{
+  font-family: 'Gilroy';
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1{
+  font-size: $page-headers;
+  font-weight: 500;
+}
+
+
 .container{
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
