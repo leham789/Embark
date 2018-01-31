@@ -1,4 +1,4 @@
-{% extends "_prelayout" %}
+{% extends "_loginlayout" %}
 {% block content %}
 
 <div class="container">
@@ -30,7 +30,10 @@
 	    {% endif %}
 	</form>
 
-	<p><a href="{{ url('password_reset') }}">Forget your password?</a></p>
+	<a href="{{ url('password_reset') }}">Forget your password?</a>
+	<br/>
+	<a href="{{ url('register') }}">Need an Account? Register Now!</a>
+
 
 </div>
 

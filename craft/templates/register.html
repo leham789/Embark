@@ -1,5 +1,7 @@
-{% extends "_layout" %}
+{% extends "_loginlayout" %}
 {% block content %}
+
+<div class="container">
 
 	<h1>{{ entry.title }}</h1>
 
@@ -47,5 +49,9 @@
 
 	    <input type="submit" value="Register">
 	</form>
+
+	<a href="{{ url('login') }}">Already have an account? Log in Now!</a>
+
+</div>
 
 {% endblock %}

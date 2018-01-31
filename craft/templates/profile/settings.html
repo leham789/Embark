@@ -18,4 +18,12 @@
       <input type="submit" value="Save Profile">
   </form>
 
+	<form method="post" accept-charset="UTF-8">
+	  {{ getCsrfInput() }}
+	  <input type="hidden" name="action" value="users/deleteUser">
+	  <input type="hidden" name="redirect" value="account/delete/success">
+	  <input type="hidden" name="userId" value="{{ currentUser.id }}">
+	  <button type="submit" class="" style="color:red;">Delete my account!</button>
+	</form>
+
 {% endblock %}
