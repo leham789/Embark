@@ -1,0 +1,21 @@
+{% extends "_layout" %}
+{% requireLogin %}
+{% set title = "All Locations" %}
+
+{% block content %}
+
+	{% for entry in craft.entries.section('locations').find() %}
+	{% set image = entry.locationPhoto.first() %}
+
+		<div class="location-list">
+
+			<div class="location-image" style="background-image:url({{ image.getURL() }})">
+			</div>
+
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+
+		</div>
+
+	{% endfor %}
+
+{% endblock %}

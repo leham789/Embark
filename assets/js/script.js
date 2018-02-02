@@ -32,7 +32,11 @@ $(function(){
 });
 
 
-//Whole li clickable for the a inside
-// $("#navbar-list li").click(function(){
-//         location.href = $(this).find("a").attr("href");
-// });
+//Delete Profile Picture
+(function() {
+    // Bind an action to the deleteUserPhotoAction click event
+    $("#deleteUserPhotoAction").on('click', function() {
+        // Add the value 'zap' to the deleteUserPhoto input
+        document.getElementById("deleteUserPhotoInput").value = 'zap';
+    });
+})();
