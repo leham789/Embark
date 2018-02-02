@@ -3,36 +3,40 @@
 
 <div class="container">
 
-	<h1>{{ entry.title }}</h1>
-
-	{{ entry.body }}
+	<img class="login-logo" src="{{ siteUrl }}assets/img/general/logo-white.svg" alt="Logo">
 
 	<form method="post" accept-charset="UTF-8">
-	    {{ getCsrfInput() }}
-	    <input type="hidden" name="action" value="users/login">
 
-	    <h3><label for="loginName">Username or email</label></h3>
-	    <input id="loginName" type="text" name="loginName"
-	        value="{{ craft.session.rememberedUsername }}">
+		{% if errorMessage is defined %}
+			<div class="login-error">
+				<p>{{ errorMessage }}</p>
+			</div>
+		{% endif %}
 
-	    <h3><label for="password">Password</label></h3>
-	    <input id="password" type="password" name="password">
+    {{ getCsrfInput() }}
+    <input type="hidden" name="action" value="users/login">
 
-	    <label>
-	        <input type="checkbox" name="rememberMe" value="1">
-	        Remember me
-	    </label>
+		<h1><label for="password">Email</label></h1>
+    <input id="loginName" class="text-field" placeholder="Enter your email address" type="text" name="loginName"
+        value="{{ craft.session.rememberedUsername }}">
 
-	    <input type="submit" value="Login">
+    <h1><label for="password">Password</label></h1>
+    <input id="password" class="text-field" placeholder="Enter your password" type="password" name="password">
 
-	    {% if errorMessage is defined %}
-	        <p>{{ errorMessage }}</p>
-	    {% endif %}
+    <label style="display:none;">
+        <input type="checkbox" name="rememberMe" value="1" checked="checked">
+    </label>
+
+    <input type="submit" class="login-btn" value="Log In">
+
 	</form>
 
-	<a href="{{ url('password_reset') }}">Forget your password?</a>
-	<br/>
-	<a href="{{ url('register') }}">Need an Account? Register Now!</a>
+	<div class="login-extra-links">
+		<a href="{{ url('register') }}">Dont have an account yet? Sign up now.</a>
+		<a href="{{ url('password_reset') }}">Forget your password?</a>
+	</div>
+
+
 
 
 </div>

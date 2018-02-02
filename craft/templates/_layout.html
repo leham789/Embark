@@ -53,25 +53,25 @@
 			<ul id="navbar-list">
 				<li {% if craft.request.firstSegment == "" %}class="active"{% endif %}>
 					<a href="{{ url('/') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/site/explore-icon.svg" alt="explore"/>
+						<img class="svg" src="{{ siteUrl }}assets/img/general/explore-icon.svg" alt="explore"/>
 						<p>Explore</p>
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "search" %}class="active"{% endif %}>
 					<a href="{{ url('search') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/site/search-icon.svg" alt="explore"/>
+						<img class="svg" src="{{ siteUrl }}assets/img/general/search-icon.svg" alt="explore"/>
 						<p>Search</p>
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "favorites" %}class="active"{% endif %}>
 					<a href="{{ url('/fav') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/site/favorites-icon.svg" alt="explore"/>
+						<img class="svg" src="{{ siteUrl }}assets/img/general/favorites-icon.svg" alt="explore"/>
 						<p>Favorites</p>
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "profile" %}class="active"{% endif %}>
 					<a href="{{ url('profile') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/site/profile-icon.svg" alt="explore"/>
+						<img class="svg" src="{{ siteUrl }}assets/img/general/profile-icon.svg" alt="explore"/>
 						<p>Profile</p>
 					</a>
 				</li>

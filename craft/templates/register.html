@@ -3,9 +3,7 @@
 
 <div class="container">
 
-	<h1>{{ entry.title }}</h1>
-
-	{{ entry.body }}
+	<img class="login-logo" src="{{ siteUrl }}assets/img/general/logo-white.svg" alt="Logo">
 
 	<form method="post" accept-charset="UTF-8">
 	    {{ getCsrfInput() }}
@@ -14,43 +12,52 @@
 
 	    {% macro errorList(errors) %}
 	        {% if errors %}
-	            <ul class="errors">
+							<div class="login-error">
+								<ul>
 	                {% for error in errors %}
 	                    <li>{{ error }}</li>
 	                {% endfor %}
-	            </ul>
+								</ul>
+							</div>
 	        {% endif %}
 	    {% endmacro %}
 
 	    {% from _self import errorList %}
 
-	    <h3><label for="username">Username</label></h3>
-	    <input id="username" type="text" name="username"
+			<div class="login-error">
+				<p>{{ errorMessage }}</p>
+			</div>
+
+	    <h1><label for="username">Username</label></h1>
+	    <input id="username" class="text-field" placeholder="Create your username" type="text" name="username"
 	        {%- if account is defined %} value="{{ account.username }}"{% endif -%}>
 
 	    {% if account is defined %}
 	        {{ errorList(account.getErrors('username')) }}
 	    {% endif %}
 
-	    <h3><label for="email">Email</label></h3>
-	    <input id="email" type="text" name="email"
+	    <h1><label for="email">Email</label></h1>
+	    <input id="email" class="text-field" placeholder="Enter your email" type="text" name="email"
 	        {%- if account is defined %} value="{{ account.email }}"{% endif %}>
 
 	    {% if account is defined %}
 	        {{ errorList(account.getErrors('email')) }}
 	    {% endif %}
 
-	    <h3><label for="password">Password</label></h3>
-	    <input id="password" type="password" name="password">
+	    <h1><label for="password">Password</label></h1>
+	    <input id="password" class="text-field" placeholder="Create your password" type="password" name="password">
 
 	    {% if account is defined %}
 	        {{ errorList(account.getErrors('password')) }}
 	    {% endif %}
 
-	    <input type="submit" value="Register">
+	    <input type="submit" class="login-btn" value="Register">
 	</form>
 
-	<a href="{{ url('login') }}">Already have an account? Log in Now!</a>
+	<div class="login-extra-links">
+		<a href="{{ url('login') }}">Already have an account? Log in Now!</a>
+	</div>
+
 
 </div>
 
