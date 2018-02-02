@@ -22,20 +22,3 @@ $break-large: 1200px;
 $page-headers: 1.25em;
 $nav-font: 0.7em;
 $small-link-font: 0.85em;
-
-
-//Mixins
-@mixin selection {
-  ::-moz-selection { @content; }
-  ::selection { @content; }
-  ::-o-selection { @content; }
-  ::-ms-selection { @content; }
-  ::-webkit-selection { @content; }
-}
-
-@mixin transition($transition...) {
-    -moz-transition:    $transition;
-    -o-transition:      $transition;
-    -webkit-transition: $transition;
-    transition:         $transition;
-}

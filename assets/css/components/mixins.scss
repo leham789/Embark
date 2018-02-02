@@ -1,0 +1,19 @@
+//Mixins
+
+//Highlight Colour
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+  ::-o-selection { @content; }
+  ::-ms-selection { @content; }
+  ::-webkit-selection { @content; }
+}
+
+//Transition
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
