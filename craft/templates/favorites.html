@@ -1,0 +1,46 @@
+{% extends "_layout" %}
+
+{% requireLogin %}
+{% block content %}
+
+	{% set lists = craft.shortlist.lists %}
+
+	{% if lists is empty %}
+		<p>You have no lists at the moment.</p>
+	{% else %}
+
+	{% for list in lists %}
+		<h1>{{ list.title }}</h1>
+
+		{% if list.items is empty %}
+			<p>This list is empty</p>
+		{% else %}
+
+
+	    {% for item in list.items %}
+
+				<div class="location-image" style="background-image:url({{ item.element.locationPhoto[0].url }})">
+				</div>
+
+				<a href="{{ item.element.url }}">{{ item.element.title }}</a>
+				<a href="{{ item.removeActionUrl }}">remove</a>
+				</br>
+	    {% endfor %}
+
+
+		{% endif %}
+
+	{% endfor %}
+
+	{% endif %}
+
+	<style media="screen">
+		.location-image{
+				width: 400px;
+				height: 200px;
+				background-size: contain;
+		}
+	</style>
+
+
+{% endblock %}

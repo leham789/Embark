@@ -3,15 +3,19 @@
 {% requireLogin %}
 {% block content %}
 
-
-
 	<h1>Explore</h1>
 
-	<form action="{{ url('search/results') }}">
-    <input type="search" name="q" placeholder="Search">
-    <input type="submit" value="Go">
-	</form>
 
-	{{ entry.body }}
+
+		{% for entry in craft.entries.section('locations') %}
+      {% set item = craft.shortlist.item(entry.id) %}
+      <h2>{{ entry.title }}</h2>
+
+      {% if item.inList %}
+          <a href="{{ item.removeActionUrl }}">Remove from Favourites</a>
+      {% else %}
+          <a href="{{ item.addActionUrl }}">Add to Favourites</a>
+      {% endif %}
+  	{% endfor %}
 
 {% endblock %}

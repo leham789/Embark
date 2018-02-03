@@ -64,13 +64,13 @@
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "favorites" %}class="active"{% endif %}>
-					<a href="{{ url('/fav') }}">
+					<a href="{{ url('/favorites') }}">
 						<img class="svg" src="{{ siteUrl }}assets/img/general/favorites-icon.svg" alt="explore"/>
 						<p>Favorites</p>
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "profile" %}class="active"{% endif %}>
-					<a href="{{ url('profile') }}">
+					<a href="{{ siteUrl }}profile/{{ user }}">
 						<img class="svg" src="{{ siteUrl }}assets/img/general/profile-icon.svg" alt="explore"/>
 						<p>Profile</p>
 					</a>

@@ -1,0 +1,19 @@
+{% extends "_layout" %}
+{% set title = "Location Type" %}
+{% requireLogin %}
+{% block content %}
+
+<h1>{{ category }}</h1>
+
+	{% for entry in craft.categories.group('type').find() %}
+	{% set image = entry.locationPhoto.first() %}
+
+		<div class="location-list">
+
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+
+		</div>
+
+	{% endfor %}
+
+{% endblock %}

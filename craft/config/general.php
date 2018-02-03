@@ -14,6 +14,11 @@ return array(
     //'cacheDuration' => 'P1W'
   ),
 
+  'defaultSearchTermOptions' => array(
+    'subLeft' => true,
+    'subRight' => true,
+  ),
+
   'localhost' => array(
     'environmentVariables' => array(
       'sitePath' => '/Users/liamdean/Developer/embark/',
