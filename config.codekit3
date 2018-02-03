@@ -33368,20 +33368,6 @@
 		"oAP": "\/craft\/templates\/login.html",
 		"oF": 0
 		},
-	"\/craft\/templates\/news\/_entry.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/templates\/news\/_entry.html",
-		"oF": 0
-		},
-	"\/craft\/templates\/news\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/templates\/news\/index.html",
-		"oF": 0
-		},
 	"\/craft\/templates\/password_reset.html": {
 		"cB": 0,
 		"ft": 8192,

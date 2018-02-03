@@ -1,15 +1,14 @@
 {% extends "_layout" %}
+{% set title = user.username %}
 {% requireLogin %}
+{% block content %}
+
 {% set user = craft.users.username( craft.request.segment(2) ).first() %}
 {% if not user %}
    {% exit 404 %}
 {% endif %}
 
-{% set title = user.username %}
-
 {% set search = user %}
-
-{% block content %}
 
 <div class="profile-page">
 

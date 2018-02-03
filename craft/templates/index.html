@@ -1,8 +1,11 @@
 {% extends "_layout" %}
-{% block content %}
+{% set title = "Explore" %}
 {% requireLogin %}
+{% block content %}
 
-	<h1>{{ entry.title }}</h1>
+
+
+	<h1>Explore</h1>
 
 	<form action="{{ url('search/results') }}">
     <input type="search" name="q" placeholder="Search">

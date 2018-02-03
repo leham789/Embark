@@ -1,7 +1,6 @@
 {% extends "_layout" %}
-{% requireLogin %}
 {% set title = "All Locations" %}
-
+{% requireLogin %}
 {% block content %}
 
 	{% for entry in craft.entries.section('locations').find() %}
