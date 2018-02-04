@@ -15,7 +15,7 @@
 
 	<div id="map"></div>
 
-	<p>{{ entry.map.lat }}, {{ entry.map.lng }}</p>
+	<!-- <p>{{ entry.map.lat }}, {{ entry.map.lng }}</p> -->
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3stoQSm9dPgQ5zyrEtYPMIS5XlDZHHBA&callback=initMap"></script>
 
@@ -25,6 +25,7 @@
          map = new google.maps.Map(document.getElementById('map'), {
            center: {lat: 51.509865, lng: -0.118092},
            zoom: 11,
+					 minZoom: 7, maxZoom: 20,
 					 disableDefaultUI: true,
 					 zoomControl: true,
 					 scrollwheel: false,
@@ -69,8 +70,6 @@
        }
 
      </script>
-
-
 
 
 </div>
