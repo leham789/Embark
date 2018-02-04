@@ -10,22 +10,25 @@
 
 {% set search = user %}
 
-<div class="profile-page">
+  <div class="container compensator">
 
-  <h1>{{ user.username }}</h1>
-  {{ entry.body }}
+    <div class="profile-page">
 
-  <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+      <h1>{{ user.username }}</h1>
+      {{ entry.body }}
+
+      <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
 
 
-  <p>{{ user.fullname }}</p>
-  <p>{{ user.email }}</p>
-  <p>{{ user.userBio }}</p>
+      <p>{{ user.fullname }}</p>
+      <p>{{ user.email }}</p>
+      <p>{{ user.userBio }}</p>
 
-  <a href="{{ currentUser.username }}/settings">settings</a>
+      <a href="{{ currentUser.username }}/settings">settings</a>
 
-</div>
+    </div>
 
+  </div>
 
 
 {% endblock %}

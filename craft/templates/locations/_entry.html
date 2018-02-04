@@ -3,16 +3,24 @@
 {% requireLogin %}
 {% block content %}
 
+<div class="compensator">
+
 {% set image = entry.locationPhoto.first() %}
 
 	<div class="location-page">
 
 		<div class="location-image" style="background-image:url({{ siteUrl }}{{ image.getURL() }})"></div>
 
-		<h1>{{ entry.title }}</h1>
+		<div class="container">
 
-		<p>{{ entry.locationOverview }}</p>
-		
+			<h1>{{ entry.title }}</h1>
+
+			<p>{{ entry.locationOverview }}</p>
+
+		</div>
+
 	</div>
+
+</div>
 
 {% endblock %}

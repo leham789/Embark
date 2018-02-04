@@ -3,7 +3,9 @@
 {% requireLogin %}
 {% block content %}
 
-<h1>{{ category }}</h1>
+<div class="container compensator">
+
+	<h1>{{ category }}</h1>
 
 	{% for entry in craft.categories.group('city').find() %}
 	{% set image = entry.locationPhoto.first() %}
@@ -15,5 +17,7 @@
 		</div>
 
 	{% endfor %}
+
+</div>
 
 {% endblock %}

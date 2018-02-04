@@ -3,11 +3,15 @@
 {% requireLogin %}
 {% block content %}
 
+<div class="container compensator">
+
   <h1>{{ category }}</h1>
 
   {% set entries = craft.entries.relatedTo(category) %}
   {% for entry in entries %}
           <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
   {% endfor %}
+
+</div>
 
 {% endblock %}

@@ -3,18 +3,60 @@
 {% requireLogin %}
 {% block content %}
 
-	{% for entry in craft.entries.section('locations').find() %}
+<div class="container compensator">
+
+	<h1>Location List</h1>
+
+	{% for entry in craft.entries.section('locations') %}
+	{% set item = craft.shortlist.item(entry.id) %}
 	{% set image = entry.locationPhoto.first() %}
 
-		<div class="location-list">
+	<div class="location-list">
 
-			<div class="location-image" style="background-image:url({{ image.getURL() }})">
+			<div class="loc-img" style="background-image:url({{ image.getURL() }})">
+
+				<div class="loc-img-inside">
+
+					<div class="loc-dist">
+						<p>0.0 miles away</p>
+					</div>
+
+					<div class="loc-fav">
+
+						{% if item.inList %}
+							<a href="{{ item.removeActionUrl }}">
+								<img class="" src="{{ siteUrl }}assets/img/general/heart-full.svg" alt="Remove from favourites"/>
+							</a>
+						{% else %}
+							<a href="{{ item.addActionUrl }}">
+								<img class="" src="{{ siteUrl }}assets/img/general/heart.svg" alt="Add to favourites"/>
+							</a>
+						{% endif %}
+
+					</div>
+
+				</div>
+
 			</div>
 
-			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			<a href="{{ entry.url }}">
 
-		</div>
+			<div class="loc-list-bar container">
+
+				<h1>{{ entry.title }}</h1>
+
+				{% for category in entry.locationType %}
+					<p>{{ category.title }}</p>
+				{% endfor %}
+
+			</div>
+
+			</a>
+
+	</div>
 
 	{% endfor %}
+
+</div>
 
 {% endblock %}

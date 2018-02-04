@@ -3,11 +3,15 @@
 {% requireLogin %}
 {% block content %}
 
+<div class="container compensator">
+
 	<h1>Search</h1>
 
 	<form action="{{ url('search/results') }}">
     <input type="search" name="q" placeholder="Search">
     <input type="submit" value="Go">
 	</form>
+
+</div>
 
 {% endblock %}

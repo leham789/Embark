@@ -5,6 +5,8 @@
 
 {% set user = craft.users.username( craft.request.segment(2) ).first() %}
 
+<div class="container compensator">
+
 	<h1>Settings</h1>
 
 	<!-- Update photo -->
@@ -46,11 +48,6 @@
 
 
 
-
-
-
-
-
   <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
       {{ getCsrfInput() }}
       <input type="hidden" name="action" value="users/saveUser">
@@ -73,5 +70,10 @@
 	  <input type="hidden" name="userId" value="{{ currentUser.id }}">
 	  <button type="submit" class="" style="color:red;">Delete my account!</button>
 	</form>
+
+
+</div>
+
+
 
 {% endblock %}

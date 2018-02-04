@@ -3,6 +3,8 @@
 {% requireLogin %}
 {% block content %}
 
+<div class="container compensator">
+
 	<h1>Search Results</h1>
 
   {% set query = craft.request.getParam('q') %}
@@ -21,5 +23,7 @@
   {% endif %}
 
 	{{ entry.body }}
+
+</div>
 
 {% endblock %}

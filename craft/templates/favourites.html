@@ -1,7 +1,9 @@
 {% extends "_layout" %}
-
+{% set title = "Favourites" %}
 {% requireLogin %}
 {% block content %}
+
+<div class="container compensator">
 
 	{% set lists = craft.shortlist.lists %}
 
@@ -17,6 +19,8 @@
 		{% else %}
 
 
+
+
 	    {% for item in list.items %}
 
 				<div class="location-image" style="background-image:url({{ item.element.locationPhoto[0].url }})">
@@ -25,7 +29,10 @@
 				<a href="{{ item.element.url }}">{{ item.element.title }}</a>
 				<a href="{{ item.removeActionUrl }}">remove</a>
 				</br>
+
 	    {% endfor %}
+
+
 
 
 		{% endif %}
@@ -42,5 +49,6 @@
 		}
 	</style>
 
+</div>
 
 {% endblock %}

@@ -3,11 +3,15 @@
 {% requireLogin %}
 {% block content %}
 
+<div class="container compensator">
+
 	<h1>Profiles</h1>
 
 	{% set users = craft.users %}
 	{% for user in users %}
 	    <a href="{{ siteUrl }}profile/{{ user }}">{{ user }}</a>
 	{% endfor %}
+
+</div>
 
 {% endblock %}
