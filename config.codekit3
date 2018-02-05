@@ -16,6 +16,19 @@
 		"oAP": "\/.htaccess",
 		"oF": 0
 		},
+	"\/assets\/css\/components\/animation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/components\/animation.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
 	"\/assets\/css\/components\/layout.scss": {
 		"aP": 1,
 		"bl": 0,

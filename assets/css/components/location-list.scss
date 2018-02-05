@@ -1,8 +1,11 @@
-.location-list{
+.locations{
   background: $white;
   box-shadow: 0 2px 7px 0 rgba(192,192,192,0.25);
   border-radius: 5px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  // @include transition(width .3s ease-in);
 
   .loc-img{
     background-repeat: no-repeat;
@@ -65,4 +68,64 @@
       margin: 0px;
     }
   }
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width:999px) {
+
+  .locations{
+    width: -webkit-calc(50% - 15px);
+    float: left;
+
+    &:nth-child(odd) {
+      margin-right: 15px;
+    }
+    &:nth-child(even) {
+      margin-left: 15px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width:1399px) {
+
+  .locations{
+    width: -webkit-calc(33.33% - 20px);
+    float: left;
+    margin-right: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width:2199px)  {
+
+  .locations{
+    width: -webkit-calc(25% - 22.5px);
+    float: left;
+    margin-right: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 2200px) {
+
+  .locations{
+    width: -webkit-calc(20% - 24px);
+    float: left;
+    margin-right: 30px;
+
+    &:nth-child(5n) {
+      margin-right: 0px;
+    }
+  }
+
 }

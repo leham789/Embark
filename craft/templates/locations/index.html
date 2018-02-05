@@ -7,11 +7,13 @@
 
 	<h1>Location List</h1>
 
+	<div class="location-list">
+
 	{% for entry in craft.entries.section('locations') %}
 	{% set item = craft.shortlist.item(entry.id) %}
 	{% set image = entry.locationPhoto.first() %}
 
-	<div class="location-list">
+	<div class="locations">
 
 			<div class="loc-img" style="background-image:url({{ image.getURL() }})">
 
@@ -56,6 +58,8 @@
 	</div>
 
 	{% endfor %}
+
+	</div>
 
 </div>
 
