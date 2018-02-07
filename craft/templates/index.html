@@ -12,11 +12,11 @@
 
 		{% for entry in craft.entries.section('locations') %}
     {% set item = craft.shortlist.item(entry.id) %}
-		{% set image = entry.locationPhoto.first() %}
+		{% set image = entry.locationPhoto[0] ?? null%}
 
 		<div class="locations">
 
-				<div class="loc-img" style="background-image:url({{ image.getURL() }})">
+				<div class="loc-img" style="background-image: url({% if image %}{{image.url}}{% endif %});">
 
 					<div class="loc-img-inside">
 

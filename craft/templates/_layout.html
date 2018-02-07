@@ -52,7 +52,7 @@
 		<div class="navbar">
 			<ul id="navbar-list">
 				<li {% if craft.request.firstSegment == "" %}class="active"{% endif %}>
-					<a href="{{ url('/') }}">
+					<a href="{{ url('') }}">
 						<img class="svg" src="{{ siteUrl }}assets/img/general/explore-icon.svg" alt="explore"/>
 						<p>Explore</p>
 					</a>
@@ -64,7 +64,7 @@
 					</a>
 				</li>
 				<li {% if craft.request.firstSegment == "favourites" %}class="active"{% endif %}>
-					<a href="{{ url('/favourites') }}">
+					<a href="{{ url('favourites') }}">
 						<img class="svg" src="{{ siteUrl }}assets/img/general/favourites-icon.svg" alt="explore"/>
 						<p>Favourites</p>
 					</a>
