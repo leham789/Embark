@@ -45,6 +45,7 @@ window.sr = new ScrollReveal();
 sr.reveal('.locations', {
   reset: true,
   duration: 1100,
+  delay: 200,
   origin: 'bottom',
   distance: '20px',
 }, 0);
