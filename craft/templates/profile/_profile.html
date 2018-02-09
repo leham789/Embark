@@ -14,11 +14,18 @@
 
     <div class="profile-page">
 
-      <h1>{{ user.username }}</h1>
-      {{ entry.body }}
-
       <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
 
+      {% if currentUser %}
+          <p>{{ currentUser}}</p>
+          <button onclick="window.localStorage.clear();" class="logout-btn">
+            <a href="{{ url('logout') }}">Logout</a>
+          </button>
+      {% else %}
+          <a href="{{ url('login') }}">Login</a>
+      {% endif %}
+
+      {{ entry.body }}
 
       <p>{{ user.fullname }}</p>
       <p>{{ user.email }}</p>

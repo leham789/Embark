@@ -23,12 +23,38 @@ header{
     color: $white;
     display: inline-block;
   }
-  .half{
-    width: 49%;
-    display: inline-block;
+  .container{
+    padding-top: 26px;
+  }
+  input{
 
-    &:last-child{
-      text-align: right;
+    &::placeholder {
+      color: $white;
+      letter-spacing: 0.5px;
+    }
+
+    &[type=search] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 0px;
+      border-radius: 5px;
+      font-size: 16px;
+      color: $white;
+      background-color: rgba(250, 250, 250, 0.2);
+      background-image: url('../img/general/Search-Bar.svg');
+      background-position: right 15px bottom 20px;
+      background-repeat: no-repeat;
+      background-size: 16px;
+      padding: 20px 20px 20px 15px;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+
+    &[type=search]:focus {
+        width: 100%;
+    }
+    &:focus {
+      outline: none;
     }
   }
 }

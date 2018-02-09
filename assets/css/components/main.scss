@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Gilroy';
-    src: url('/assets/fonts/Gilroy-Medium.eot');
-    src: url('/assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Gilroy-Medium.woff') format('woff'),
-        url('/assets/fonts/Gilroy-Medium.ttf') format('truetype'),
-        url('/assets/fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+        url('../fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
@@ -12,10 +12,10 @@
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Light.eot');
-    src: url('/assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
-        url('/assets/fonts/Gilroy-Light.woff') format('woff'),
-        url('/assets/fonts/Gilroy-Light.ttf') format('truetype'),
-        url('/assets/fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
+    src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy-Light.ttf') format('truetype'),
+        url('../fonts/Gilroy-Light.svg#Gilroy-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }

@@ -1,107 +1,179 @@
-{% extends "_layout" %}
+{% extends "_loclayout" %}
 {% set title = entry.title %}
 {% requireLogin %}
 {% block content %}
 
-<div class="compensator">
-
 {% set image = entry.locationPhoto.first() %}
 
-	<div class="location-page">
 
-		<div class="location-image" style="background-image:url({{ image.getURL() }})"></div>
+<div class="location-page">
+
+	<div class="loc-img" style="background-image:url({{ image.getURL() }})">
 
 		<div class="container">
+			<div class="loc-img-overlay">
 
-			<h1>{{ entry.title }}</h1>
+				<div class="loc-back">
 
-			<p>{{ entry.locationOverview }}</p>
+					<a href="javascript:history.back()">
+							<img src="{{ siteUrl }}assets/img/general/Back.svg" alt="explore"/>
+					</a>
 
-			<p>{{ entry.locationNumber }}</p>
+				</div>
 
-			<p>{{ entry.map }}</p>
+				<div class="loc-fav">
+				{% set item = craft.shortlist.item(entry.id) %}
+					{% if item.inList %}
+						<a href="{{ item.removeActionUrl }}">
+							<img class="" src="{{ siteUrl }}assets/img/general/heart-full.svg" alt="Remove from favourites"/>
+						</a>
+					{% else %}
+						<a href="{{ item.addActionUrl }}">
+							<img class="" src="{{ siteUrl }}assets/img/general/heart.svg" alt="Add to favourites"/>
+						</a>
+					{% endif %}
+				</div>
 
-			<p>{{ entry.map.lat }}, {{ entry.map.lng }}</p>
-
-
-			<script type="text/javascript">
-			function distance(lon1, lat1, lon2, lat2) {
-			var R = 6371;
-			var dLat = (lat2-lat1).toRad();e
-			var dLon = (lon2-lon1).toRad();
-			var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-							Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) *
-							Math.sin(dLon/2) * Math.sin(dLon/2);
-			var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-			var d = R * c; // Distance in km
-			return d;
-			}
-
-			/** Converts numeric degrees to radians */
-			 if (typeof(Number.prototype.toRad) === "undefined") {
-			 Number.prototype.toRad = function() {
-			 	return this * Math.PI / 180;
-			}
-			}
-
-			window.navigator.geolocation.getCurrentPosition(function(pos) {
-			// console.log(pos);
-			console.log(
-				distance(pos.coords.longitude, pos.coords.latitude, {{ entry.map.lat }}, {{ entry.map.lng }})
-			);
-			});
-			</script>
-
+			</div>
 		</div>
-
-		<div id="map">
-
-		</div>
-
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3stoQSm9dPgQ5zyrEtYPMIS5XlDZHHBA&callback=initMap"></script>
-
-		<script>
-
-			var map, infoWindow, marker, pin;
-				function initMap() {
-					map = new google.maps.Map(document.getElementById('map'), {
-					center: {
-						lat: {{ entry.map.lat }},
-						lng: {{ entry.map.lng }}
-					},
-					zoom: 15,
-					minZoom: 7, maxZoom: 20,
-					disableDefaultUI: true,
-					zoomControl: true,
-					scrollwheel: false,
-					styles:
-						[{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"saturation":"0"},{"lightness":"0"},{"gamma":"1"},{"weight":"0.01"},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#40bbc0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#40bbc0"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#676060"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
-					});
-
-					infoWindow = new google.maps.InfoWindow;
-
-					pin = {
-	          path: 'M5,0.329029036 C2.23871014,0.329029036 0,2.56773917 0,5.32902904 C0,8.0903189 5,18.1645145 5,18.1645145 C5,18.1645145 10,8.09049725 10,5.32902904 C10,2.56756082 7.76146822,0.329029036 5,0.329029036 Z M5,7.54829849 C3.77452379,7.54829849 2.7809089,6.55450524 2.7809089,5.32920739 C2.7809089,4.10355283 3.77452379,3.11011629 5,3.11011629 C6.22565456,3.11011629 7.2190911,4.10355283 7.2190911,5.32920739 C7.21926946,6.55450524 6.22565456,7.54829849 5,7.54829849 Z',
-	          fillColor: '#40F5E7',
-	          fillOpacity: 0.9,
-	          scale: 2,
-						anchor: new google.maps.Point(10, 17.84),
-	          strokeWeight: 0
-	        };
-
-					marker = new google.maps.Marker({
-						position: new google.maps.LatLng({{ entry.map.lat }}, {{ entry.map.lng }}),
-						map: map,
-						icon: pin,
-						title: 'Snazzy!'
-					});
-
-				 }
-
-		</script>
 
 	</div>
 
+	<div class="container">
+
+		<div class="loc-topbar">
+
+			<h1>{{ entry.title }}</h1>
+			{% for category in entry.locationType %}
+				<h1>{{ category.title }}</h1>
+			{% endfor %}
+
+		</div>
+
+		<p>{{ craft.commentsrating.elementRating(entry.id) }}</p>
+
+		<p>{{ entry.locationOverview }}</p>
+
+		<p>{{ entry.locationNumber }}</p>
+
+		<p>{{ entry.map }}</p>
+
+		<p>{{ entry.map.lat }}, {{ entry.map.lng }}</p>
+
+		<p id="loc-distance"></p>
+
+		<div class="star-rating-ting">
+		{% set averageRating = craft.commentsrating.elementRating(entry.id) %}
+		{% set averageRatingBlank = 5 - averageRating %}
+
+		{% if averageRating > '0' %}
+
+			{% for star in 1..averageRating %}
+
+					<div class="icon-star is-active"></div>
+
+			{% endfor %}
+
+			{% if averageRating < 5 %}
+
+					{% for star in 1..averageRatingBlank %}
+
+							<div class="icon-star"></div>
+
+					{% endfor %}
+
+			{% endif %}
+
+		{% endif %}
+		</div>
+
+
+		{% set params = {
+        order: 'dateCreated asc',
+    } %}
+
+    {{ craft.comments.form(entry.id, params) }}
+
+
+
+	</div>
+
+	<div id="map">
+
+	</div>
+
+
+	<script type="text/javascript">
+		function CalcDistanceBetween(lat1, lon1, lat2, lon2) {
+			var R = 3958.7558657440545;
+			var dLat = toRad(lat2-lat1);
+			var dLon = toRad(lon2-lon1);
+			var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+							Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+							Math.sin(dLon/2) * Math.sin(dLon/2);
+			var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+			var d = R * c;
+			return d;
+		}
+
+		function toRad(Value) {
+				return Value * Math.PI / 180;
+		}
+
+		var destinationLongitude = {{ entry.map.lng }}
+		var destinationLatitude = {{ entry.map.lat }}
+		var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(2)
+
+		console.log(
+			finalmiles
+		);
+
+		var output = document.getElementById("loc-distance");
+		output.innerHTML = finalmiles + ' miles away';
+	</script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3stoQSm9dPgQ5zyrEtYPMIS5XlDZHHBA&callback=initMap"></script>
+
+	<script>
+
+		var map, infoWindow, marker, pin;
+			function initMap() {
+				map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+					lat: {{ entry.map.lat }},
+					lng: {{ entry.map.lng }}
+				},
+				zoom: 15,
+				minZoom: 7, maxZoom: 20,
+				disableDefaultUI: true,
+				zoomControl: true,
+				scrollwheel: false,
+				styles:
+					[{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"saturation":"0"},{"lightness":"0"},{"gamma":"1"},{"weight":"0.01"},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#40bbc0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#40bbc0"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#676060"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
+				});
+
+				infoWindow = new google.maps.InfoWindow;
+
+				pin = {
+          path: 'M5,0.329029036 C2.23871014,0.329029036 0,2.56773917 0,5.32902904 C0,8.0903189 5,18.1645145 5,18.1645145 C5,18.1645145 10,8.09049725 10,5.32902904 C10,2.56756082 7.76146822,0.329029036 5,0.329029036 Z M5,7.54829849 C3.77452379,7.54829849 2.7809089,6.55450524 2.7809089,5.32920739 C2.7809089,4.10355283 3.77452379,3.11011629 5,3.11011629 C6.22565456,3.11011629 7.2190911,4.10355283 7.2190911,5.32920739 C7.21926946,6.55450524 6.22565456,7.54829849 5,7.54829849 Z',
+          fillColor: '#40F5E7',
+          fillOpacity: 0.9,
+          scale: 2,
+					anchor: new google.maps.Point(10, 17.84),
+          strokeWeight: 0
+        };
+
+				marker = new google.maps.Marker({
+					position: new google.maps.LatLng({{ entry.map.lat }}, {{ entry.map.lng }}),
+					map: map,
+					icon: pin,
+				});
+
+			 }
+
+	</script>
+
 </div>
+
 
 {% endblock %}

@@ -29,6 +29,19 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/assets\/css\/components\/comments.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/components\/comments.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
 	"\/assets\/css\/components\/layout.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -244,6 +257,16 @@
 		"oAP": "\/assets\/fonts\/Gilroy-Medium.woff",
 		"oF": 0
 		},
+	"\/assets\/img\/general\/Back.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/general\/Back.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/general\/background.jpg": {
 		"ft": 16384,
 		"iS": 584791,
@@ -335,6 +358,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/general\/Search-Bar.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/general\/Search-Bar.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/general\/search-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -344,6 +377,26 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/assets\/js\/comments-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/comments-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/comments.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/comments-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/assets\/js\/script-min.js": {
 		"ft": 64,
@@ -27617,4182 +27670,456 @@
 		"oAP": "\/craft\/plugins\/.htaccess",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/.gitignore": {
+	"\/craft\/plugins\/comments\/CommentsPlugin.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/.gitignore",
+		"oAP": "\/craft\/plugins\/comments\/CommentsPlugin.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/config.php": {
+	"\/craft\/plugins\/comments\/controllers\/CommentsController.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/config.php",
+		"oAP": "\/craft\/plugins\/comments\/controllers\/CommentsController.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/controllers\/Oauth_ConsoleController.php": {
+	"\/craft\/plugins\/comments\/elementactions\/Comments_StatusElementAction.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/controllers\/Oauth_ConsoleController.php",
+		"oAP": "\/craft\/plugins\/comments\/elementactions\/Comments_StatusElementAction.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/controllers\/Oauth_ProvidersController.php": {
+	"\/craft\/plugins\/comments\/elementtypes\/Comments_CommentElementType.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/controllers\/Oauth_ProvidersController.php",
+		"oAP": "\/craft\/plugins\/comments\/elementtypes\/Comments_CommentElementType.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/controllers\/Oauth_TokensController.php": {
+	"\/craft\/plugins\/comments\/fieldtypes\/CommentsFieldType.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/controllers\/Oauth_TokensController.php",
+		"oAP": "\/craft\/plugins\/comments\/fieldtypes\/CommentsFieldType.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/controllers\/OauthController.php": {
+	"\/craft\/plugins\/comments\/helpers\/CommentsHelper.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/controllers\/OauthController.php",
+		"oAP": "\/craft\/plugins\/comments\/helpers\/CommentsHelper.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/etc\/providers\/IOauth_Provider.php": {
+	"\/craft\/plugins\/comments\/migrations\/m150324_000002_comments_addVotesAndFlagsTable.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/etc\/providers\/IOauth_Provider.php",
+		"oAP": "\/craft\/plugins\/comments\/migrations\/m150324_000002_comments_addVotesAndFlagsTable.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/helpers\/OauthHelper.php": {
+	"\/craft\/plugins\/comments\/migrations\/m150324_000004_comments_supportElements.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/helpers\/OauthHelper.php",
+		"oAP": "\/craft\/plugins\/comments\/migrations\/m150324_000004_comments_supportElements.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/LICENSE.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/LICENSE.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/migrations\/m130715_191457_oauth_addUserMappingField.php": {
+	"\/craft\/plugins\/comments\/models\/Comments_CommentModel.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m130715_191457_oauth_addUserMappingField.php",
+		"oAP": "\/craft\/plugins\/comments\/models\/Comments_CommentModel.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m130907_140340_oauth_renameOauth_providersProviderClassToClass.php": {
+	"\/craft\/plugins\/comments\/models\/Comments_FlagModel.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m130907_140340_oauth_renameOauth_providersProviderClassToClass.php",
+		"oAP": "\/craft\/plugins\/comments\/models\/Comments_FlagModel.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m130912_153247_oauth_createTokenIndexes.php": {
+	"\/craft\/plugins\/comments\/models\/Comments_VoteModel.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m130912_153247_oauth_createTokenIndexes.php",
+		"oAP": "\/craft\/plugins\/comments\/models\/Comments_VoteModel.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m140417_000003_changeTokenUniqueIndexes.php": {
+	"\/craft\/plugins\/comments\/records\/Comments_CommentRecord.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m140417_000003_changeTokenUniqueIndexes.php",
+		"oAP": "\/craft\/plugins\/comments\/records\/Comments_CommentRecord.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m140623_130304_oauth_new_tokens_table.php": {
+	"\/craft\/plugins\/comments\/records\/Comments_FlagRecord.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m140623_130304_oauth_new_tokens_table.php",
+		"oAP": "\/craft\/plugins\/comments\/records\/Comments_FlagRecord.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m150112_220705_oauth_add_token_columns.php": {
+	"\/craft\/plugins\/comments\/records\/Comments_VoteRecord.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m150112_220705_oauth_add_token_columns.php",
+		"oAP": "\/craft\/plugins\/comments\/records\/Comments_VoteRecord.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/migrations\/m150311_000001_oauth_remove_old_tokens.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m150311_000001_oauth_remove_old_tokens.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/migrations\/m161025_000001_oauth_change_tokens_column_types.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/migrations\/m161025_000001_oauth_change_tokens_column_types.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/models\/Oauth_ProviderInfosModel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/models\/Oauth_ProviderInfosModel.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/models\/Oauth_ResourceOwnerModel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/models\/Oauth_ResourceOwnerModel.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/models\/Oauth_TokenModel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/models\/Oauth_TokenModel.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/OauthPlugin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/OauthPlugin.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/BaseProvider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/BaseProvider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Facebook.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Facebook.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Github.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Github.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Google.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Google.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Instagram.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Instagram.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Linkedin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Linkedin.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Slack.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Slack.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Twitter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Twitter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/providers\/Vimeo.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/providers\/Vimeo.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/records\/Oauth_ProviderInfosRecord.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/records\/Oauth_ProviderInfosRecord.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/records\/Oauth_TokenRecord.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/records\/Oauth_TokenRecord.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/releases.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/releases-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/resources\/css\/disableSave.css": {
+	"\/craft\/plugins\/comments\/resources\/css\/comments.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/css\/disableSave-min.css",
+		"oAP": "\/craft\/plugins\/comments\/resources\/css\/comments-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/craft\/plugins\/oauth\/resources\/css\/oauth.css": {
+	"\/craft\/plugins\/comments\/resources\/icon-mask.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/plugins\/comments\/resources\/icon-mask.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/craft\/plugins\/comments\/resources\/icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/plugins\/comments\/resources\/icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/craft\/plugins\/comments\/resources\/js\/comments.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/resources\/js\/comments-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/craft\/plugins\/comments\/services\/Comments_FlagService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/Comments_FlagService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/services\/Comments_ProtectService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/Comments_ProtectService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/services\/Comments_SecurityService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/Comments_SecurityService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/services\/Comments_SettingsService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/Comments_SettingsService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/services\/Comments_VoteService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/Comments_VoteService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/services\/CommentsService.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/services\/CommentsService.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_elementactions\/status.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_elementactions\/status.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_fieldtype\/input.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_fieldtype\/input.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-approved.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-approved.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-pending.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-pending.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-spam.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-spam.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-trashed.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment-trashed.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comment.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/comments.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/comments.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/form-edit.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/form-edit.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/_forms\/templates\/form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/_forms\/templates\/form.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/edit\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/edit\/index.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/index.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/permissions.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/permissions.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/flagging.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/flagging.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/general.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/general.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/index.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/notifications.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/notifications.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/security.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/security.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/templates.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/templates.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/users.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/users.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/templates\/settings\/voting.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/templates\/settings\/voting.html",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/translations\/en_us.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/translations\/en_us.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/variables\/CommentsVariable.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/variables\/CommentsVariable.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/examples.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/examples.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/parser.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/parser.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/FullNameParserTest.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/FullNameParserTest.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/phpunit.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/phpunit.xml",
+		"oF": 0
+		},
+	"\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/css\/oauth-min.css",
+		"oAP": "\/craft\/plugins\/comments\/vendor\/php-name-parser\/tests\/style-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/craft\/plugins\/oauth\/resources\/icon-mask.svg": {
+	"\/craft\/plugins\/commentsrating\/CommentsRatingPlugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/commentsrating\/CommentsRatingPlugin.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/commentsrating\/models\/CommentsRatingModel.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/commentsrating\/models\/CommentsRatingModel.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/commentsrating\/records\/CommentsRatingRecord.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/plugins\/commentsrating\/records\/CommentsRatingRecord.php",
+		"oF": 0
+		},
+	"\/craft\/plugins\/commentsrating\/resources\/icon-mask.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/icon-mask.svg",
+		"oAP": "\/craft\/plugins\/commentsrating\/resources\/icon-mask.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/craft\/plugins\/oauth\/resources\/icon.svg": {
+	"\/craft\/plugins\/commentsrating\/resources\/icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/icon.svg",
+		"oAP": "\/craft\/plugins\/commentsrating\/resources\/icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/facebook.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/facebook.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/github.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/github.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/google.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/google.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/instagram.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/instagram.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/linkedin.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/linkedin.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/slack.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/slack.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/twitter.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/twitter.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/resources\/providers\/vimeo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/oauth\/resources\/providers\/vimeo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/oauth\/services\/OauthService.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/services\/OauthService.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/src\/Guzzle\/Plugin\/Oauth2Plugin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/src\/Guzzle\/Plugin\/Oauth2Plugin.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/subscribers\/Slack.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/subscribers\/Slack.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/_layouts\/cp.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/_layouts\/cp.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/console\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/console\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/console\/_provider.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/console\/_provider.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/providers\/_edit.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/providers\/_edit.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/providers\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/providers\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/providers\/_tokens.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/providers\/_tokens.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/templates\/tokens\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/templates\/tokens\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/variables\/OauthVariable.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/variables\/OauthVariable.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/Slack.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/Slack.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/SlackAuthorizedUser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/SlackAuthorizedUser.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/SlackResourceOwner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/src\/Provider\/SlackResourceOwner.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/test\/src\/Provider\/SlackTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/adam-paterson\/oauth2-slack\/test\/src\/Provider\/SlackTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/autoload.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/autoload.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_classmap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_classmap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_files.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_files.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_namespaces.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_namespaces.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_psr4.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_psr4.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_real.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_real.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/autoload_static.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/autoload_static.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/ClassLoader.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/ClassLoader.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installed.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installed-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.editorconfig": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.editorconfig",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/_config.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/_config.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/phpunit.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/phpunit.xml.dist",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/bootstrap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/bootstrap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AglInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AglInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AimeosInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AimeosInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AnnotateCmsInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AnnotateCmsInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AsgardInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AsgardInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AttogramInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/AttogramInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BaseInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BaseInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BitrixInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BitrixInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BonefishInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/BonefishInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CakePHPInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CakePHPInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ChefInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ChefInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ClanCatsFrameworkInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ClanCatsFrameworkInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CockpitInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CockpitInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CodeIgniterInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CodeIgniterInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Concrete5Installer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Concrete5Installer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CraftInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CraftInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CroogoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/CroogoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DecibelInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DecibelInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DokuWikiInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DokuWikiInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DolibarrInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DolibarrInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DrupalInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/DrupalInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ElggInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ElggInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/EliasisInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/EliasisInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ExpressionEngineInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ExpressionEngineInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/EzPlatformInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/EzPlatformInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/FuelInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/FuelInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/FuelphpInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/FuelphpInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/GravInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/GravInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/HuradInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/HuradInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ImageCMSInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ImageCMSInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Installer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Installer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ItopInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ItopInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/JoomlaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/JoomlaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KanboardInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KanboardInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KirbyInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KirbyInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KodiCMSInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KodiCMSInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KohanaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/KohanaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LanManagementSystemInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LanManagementSystemInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LaravelInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LaravelInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LavaLiteInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LavaLiteInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LithiumInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/LithiumInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MagentoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MagentoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MakoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MakoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MauticInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MauticInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MayaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MayaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MediaWikiInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MediaWikiInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MicroweberInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MicroweberInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MODULEWorkInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MODULEWorkInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MODXEvoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MODXEvoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MoodleInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/MoodleInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OctoberInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OctoberInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OntoWikiInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OntoWikiInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OsclassInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OsclassInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OxidInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/OxidInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PhiftyInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PhiftyInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PhpBBInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PhpBBInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PimcoreInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PimcoreInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PiwikInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PiwikInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PlentymarketsInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PlentymarketsInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Plugin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Plugin.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PortoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PortoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PPIInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PPIInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PrestashopInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PrestashopInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PuppetInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/PuppetInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RadPHPInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RadPHPInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RedaxoInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RedaxoInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ReIndexInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ReIndexInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RoundcubeInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/RoundcubeInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ShopwareInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ShopwareInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SilverStripeInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SilverStripeInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SMFInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SMFInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SyDESInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/SyDESInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Symfony1Installer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/Symfony1Installer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TheliaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TheliaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TuskInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TuskInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TYPO3CmsInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TYPO3CmsInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TYPO3FlowInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/TYPO3FlowInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/UserFrostingInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/UserFrostingInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/VanillaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/VanillaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/VgmcpInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/VgmcpInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WHMCSInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WHMCSInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WolfCMSInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WolfCMSInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WordPressInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/WordPressInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/YawikInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/YawikInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ZendInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ZendInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ZikulaInstaller.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/src\/Composer\/Installers\/ZikulaInstaller.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/bootstrap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/bootstrap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/AsgardInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/AsgardInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/BitrixInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/BitrixInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/CakePHPInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/CakePHPInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/CraftInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/CraftInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/DokuWikiInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/DokuWikiInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/GravInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/GravInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/InstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/InstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/MayaInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/MayaInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/MediaWikiInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/MediaWikiInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/OctoberInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/OctoberInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/OntoWikiInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/OntoWikiInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/PimcoreInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/PimcoreInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/PiwikInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/PiwikInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/SyDESInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/SyDESInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/TestCase.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/TestCase.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/VgmcpInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/VgmcpInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/YawikInstallerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/installers\/tests\/Composer\/Installers\/Test\/YawikInstallerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/composer\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/composer\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/src\/Provider\/Google.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/src\/Provider\/Google.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/src\/Provider\/GoogleUser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/dukt\/oauth2-google\/src\/Provider\/GoogleUser.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Client.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Client.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/ClientInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/ClientInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/CookieJar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/CookieJar.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/CookieJarInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/CookieJarInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/FileCookieJar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/FileCookieJar.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/SessionCookieJar.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/SessionCookieJar.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/SetCookie.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Cookie\/SetCookie.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/BadResponseException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/BadResponseException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ClientException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ClientException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ConnectException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ConnectException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/GuzzleException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/GuzzleException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/RequestException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/RequestException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/SeekException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/SeekException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ServerException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/ServerException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/TooManyRedirectsException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/TooManyRedirectsException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/TransferException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Exception\/TransferException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/functions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/functions.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/functions_include.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/functions_include.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactoryInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlFactoryInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlHandler.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlHandler.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/CurlMultiHandler.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/EasyHandle.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/EasyHandle.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/MockHandler.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/MockHandler.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/Proxy.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Handler\/StreamHandler.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/HandlerStack.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/MessageFormatter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/MessageFormatter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Middleware.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Middleware.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Pool.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/Pool.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/PrepareBodyMiddleware.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/PrepareBodyMiddleware.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RedirectMiddleware.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RequestOptions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RequestOptions.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RetryMiddleware.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/RetryMiddleware.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/TransferStats.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/TransferStats.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/UriTemplate.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/src\/UriTemplate.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/UPGRADING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/guzzle\/UPGRADING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/Makefile": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/Makefile",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/AggregateException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/AggregateException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/CancellationException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/CancellationException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/Coroutine.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/Coroutine.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/EachPromise.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/EachPromise.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/FulfilledPromise.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/FulfilledPromise.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/functions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/functions.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/functions_include.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/functions_include.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/Promise.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/Promise.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/PromiseInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/PromiseInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/PromisorInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/PromisorInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/RejectedPromise.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/RejectedPromise.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/RejectionException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/RejectionException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/TaskQueue.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/TaskQueue.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/TaskQueueInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/promises\/src\/TaskQueueInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/AppendStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/AppendStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/BufferStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/BufferStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/CachingStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/CachingStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/DroppingStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/DroppingStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/FnStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/FnStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/functions.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/functions.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/functions_include.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/functions_include.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/InflateStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/InflateStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/LazyOpenStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/LazyOpenStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/LimitStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/LimitStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/MessageTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/MultipartStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/MultipartStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/NoSeekStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/NoSeekStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/PumpStream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/PumpStream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Request.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Request.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Response.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Response.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/ServerRequest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/ServerRequest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Stream.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Stream.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/StreamDecoratorTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/StreamDecoratorTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/StreamWrapper.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/StreamWrapper.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UploadedFile.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UploadedFile.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Uri.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/Uri.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UriNormalizer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UriNormalizer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UriResolver.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/guzzlehttp\/psr7\/src\/UriResolver.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.php_cs": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.php_cs",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractMcryptMixer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractMcryptMixer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractMixer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractMixer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractSource.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/AbstractSource.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Factory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Factory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Generator.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Generator.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/Hash.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/Hash.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/McryptRijndael128.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/McryptRijndael128.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/XorMixer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Mixer\/XorMixer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/CAPICOM.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/CAPICOM.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/MicroTime.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/MicroTime.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/MTRand.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/MTRand.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/OpenSSL.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/OpenSSL.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Rand.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Rand.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Random.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Random.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/RandomBytes.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/RandomBytes.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Sodium.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/Sodium.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/UniqID.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/UniqID.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/URandom.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/lib\/RandomLib\/Source\/URandom.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/Makefile": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/Makefile",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/phpunit.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/phpunit.xml.dist",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/bootstrap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/bootstrap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/AbstractMock.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/AbstractMock.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Generator.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Generator.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Mixer.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Mixer.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Source.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Mocks\/Random\/Source.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/FactoryTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/FactoryTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/GeneratorStringTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/GeneratorStringTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/GeneratorTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/GeneratorTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Mixer\/HashTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Mixer\/HashTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Mixer\/McryptRijndael128Test.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Mixer\/McryptRijndael128Test.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/AbstractSourceTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/AbstractSourceTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/CAPICOMTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/CAPICOMTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/MicroTimeTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/MicroTimeTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/MTRandTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/MTRandTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/RandTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/RandTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/SodiumTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/SodiumTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/UniqIDTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/UniqIDTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/URandomTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Unit\/RandomLib\/Source\/URandomTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Vectors\/Random\/GeneratorTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/random-lib\/test\/Vectors\/Random\/GeneratorTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/AbstractFactory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/AbstractFactory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BaseConverter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BaseConverter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/BCMath.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/BCMath.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/GMP.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/GMP.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/PHPMath.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/BigMath\/PHPMath.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Enum.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Enum.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Hash.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Hash.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Strength.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Strength.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Util.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/lib\/SecurityLib\/Util.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/phpunit.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/phpunit.xml.dist",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/bootstrap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/bootstrap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/AbstractMock.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/AbstractMock.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Enum.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Enum.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Factory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Factory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Strength.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Mocks\/Strength.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/AbstractFactoryTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/AbstractFactoryTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BaseConverterTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BaseConverterTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/BCMathTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/BCMathTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/GMPTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/GMPTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/PHPMathTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMath\/PHPMathTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMathTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/BigMathTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/EnumTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/EnumTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/StrengthTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/StrengthTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/UtilTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/ircmaxell\/security-lib\/test\/Unit\/Core\/UtilTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/phpunit.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/phpunit.xml.dist",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/readme.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/readme.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/src\/http_build_url.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/src\/http_build_url.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/tests\/bootstrap.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/tests\/bootstrap.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/tests\/HttpBuildUrlTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/jakeasmith\/http_build_url\/tests\/HttpBuildUrlTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/CONDUCT.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/CONDUCT.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/tumblr.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/tumblr.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/twitter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/twitter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/xing.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/resources\/examples\/xing.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/rfc5849.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/rfc5849.txt",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/ClientCredentials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/ClientCredentials.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/ClientCredentialsInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/ClientCredentialsInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/Credentials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/Credentials.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/CredentialsException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/CredentialsException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/CredentialsInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/CredentialsInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/TemporaryCredentials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/TemporaryCredentials.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/TokenCredentials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Credentials\/TokenCredentials.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Bitbucket.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Bitbucket.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Magento.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Magento.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Server.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Server.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Trello.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Trello.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Tumblr.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Tumblr.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Twitter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Twitter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/User.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/User.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Uservoice.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Uservoice.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Xing.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Server\/Xing.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/HmacSha1Signature.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/HmacSha1Signature.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/PlainTextSignature.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/PlainTextSignature.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/Signature.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/Signature.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/SignatureInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/src\/Client\/Signature\/SignatureInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/ClientCredentialsTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/ClientCredentialsTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/HmacSha1SignatureTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/HmacSha1SignatureTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/PlainTextSignatureTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/PlainTextSignatureTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/ServerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/ServerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/stubs\/ServerStub.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/stubs\/ServerStub.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/TrelloServerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/TrelloServerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/XingServerTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth1-client\/tests\/XingServerTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CREDITS.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/CREDITS.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.PROVIDER-GUIDE.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.PROVIDER-GUIDE.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.PROVIDERS.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.PROVIDERS.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.UPGRADING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/README.UPGRADING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/AbstractGrant.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/AuthorizationCode.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/AuthorizationCode.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/ClientCredentials.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/ClientCredentials.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/Exception\/InvalidGrantException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/Exception\/InvalidGrantException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/GrantFactory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/Password.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/Password.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/RefreshToken.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Grant\/RefreshToken.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/AbstractProvider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/Exception\/IdentityProviderException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/Exception\/IdentityProviderException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/GenericProvider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/GenericProvider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/GenericResourceOwner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/GenericResourceOwner.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/ResourceOwnerInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Provider\/ResourceOwnerInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Token\/AccessToken.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/ArrayAccessorTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/ArrayAccessorTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/BearerAuthorizationTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/BearerAuthorizationTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/MacAuthorizationTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/MacAuthorizationTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/QueryBuilderTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/QueryBuilderTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/RequestFactory.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/RequiredParameterTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-client\/src\/Tool\/RequiredParameterTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Grant\/FbExchangeToken.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Grant\/FbExchangeToken.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/AppSecretProof.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/AppSecretProof.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/Exception\/FacebookProviderException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/Exception\/FacebookProviderException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/Facebook.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/Facebook.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/FacebookUser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-facebook\/src\/Provider\/FacebookUser.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/Exception\/GithubIdentityProviderException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/Exception\/GithubIdentityProviderException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/Github.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/Github.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/GithubResourceOwner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/src\/Provider\/GithubResourceOwner.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/test\/src\/Provider\/GithubTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-github\/test\/src\/Provider\/GithubTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/index.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/provider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/provider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/reset.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/reset.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/server.sh": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/server.sh",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/user.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/examples\/user.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/phpunit.xml.dist": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/phpunit.xml.dist",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/src\/Provider\/Google.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/src\/Provider\/Google.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/src\/Provider\/GoogleUser.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-google\/src\/Provider\/GoogleUser.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/Exception\/InstagramIdentityProviderException.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/Exception\/InstagramIdentityProviderException.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/Instagram.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/Instagram.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/InstagramResourceOwner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/src\/Provider\/InstagramResourceOwner.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/test\/src\/Provider\/InstagramTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-instagram\/test\/src\/Provider\/InstagramTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.scrutinizer.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.scrutinizer.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/CONTRIBUTING.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/CONTRIBUTING.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/src\/Provider\/LinkedIn.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/src\/Provider\/LinkedIn.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/src\/Provider\/LinkedInResourceOwner.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/src\/Provider\/LinkedInResourceOwner.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/test\/src\/Provider\/LinkedInTest.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/league\/oauth2-linkedin\/test\/src\/Provider\/LinkedInTest.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/MessageInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/MessageInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/RequestInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/RequestInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/ResponseInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/ResponseInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/ServerRequestInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/ServerRequestInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/StreamInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/StreamInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/UploadedFileInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/UploadedFileInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/UriInterface.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/psr\/http-message\/src\/UriInterface.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/.travis.yml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/CHANGELOG.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/CHANGELOG.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/composer.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/composer-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/LICENSE": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/LICENSE",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/phpunit.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/phpunit.xml",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/src\/Provider\/Vimeo.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/src\/Provider\/Vimeo.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/src\/Provider\/VimeoResourceOwner.php": {
+	"\/craft\/plugins\/commentsrating\/services\/CommentsRatingService.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/src\/Provider\/VimeoResourceOwner.php",
+		"oAP": "\/craft\/plugins\/commentsrating\/services\/CommentsRatingService.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/tests\/Provider\/VimeoTest.php": {
+	"\/craft\/plugins\/commentsrating\/variables\/CommentsRatingVariable.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/craft\/plugins\/oauth\/vendor\/saf33r\/oauth2-vimeo\/tests\/Provider\/VimeoTest.php",
+		"oAP": "\/craft\/plugins\/commentsrating\/variables\/CommentsRatingVariable.php",
 		"oF": 0
 		},
 	"\/craft\/plugins\/shortlist\/controllers\/Shortlist_ItemController.php": {
@@ -32117,386 +28444,6 @@
 		"oAP": "\/craft\/plugins\/simplemap\/variables\/SimpleMapVariable.php",
 		"oF": 0
 		},
-	"\/craft\/plugins\/social\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/.gitignore",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/base\/SocialTrait.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/base\/SocialTrait.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/changelog.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/changelog.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/social\/config.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/config.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/controllers\/Social_InstallController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/controllers\/Social_InstallController.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/controllers\/Social_LoginAccountsController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/controllers\/Social_LoginAccountsController.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/controllers\/Social_LoginProvidersController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/controllers\/Social_LoginProvidersController.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/controllers\/Social_SettingsController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/controllers\/Social_SettingsController.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/controllers\/SocialController.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/controllers\/SocialController.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/elementtypes\/Social_LoginAccountElementType.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/elementtypes\/Social_LoginAccountElementType.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/etc\/providers\/ISocial_Provider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/etc\/providers\/ISocial_Provider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/etc\/Users\/SocialUserIdentity.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/etc\/Users\/SocialUserIdentity.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m140620_122653_create_social_users.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m140620_122653_create_social_users.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m141106_220045_social_add_accounts_table.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m141106_220045_social_add_accounts_table.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m151010_000001_interchange_social_users_and_accounts_tables.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m151010_000001_interchange_social_users_and_accounts_tables.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m151010_000002_rename_accounts_provider_column_by_gateway.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m151010_000002_rename_accounts_provider_column_by_gateway.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m151031_000001_rename_accounts_gateway_by_accounts_providerhandle.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m151031_000001_rename_accounts_gateway_by_accounts_providerhandle.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m151123_000001_delete_social_users_table.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m151123_000001_delete_social_users_table.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m151210_000001_social_rename_social_accounts_by_social_login_accounts.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m151210_000001_social_rename_social_accounts_by_social_login_accounts.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m160510_000001_social_make_elemental.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m160510_000001_social_make_elemental.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/migrations\/m160518_000001_social_drop_tokenid_column.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/migrations\/m160518_000001_social_drop_tokenid_column.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/models\/Social_LoginAccountModel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/models\/Social_LoginAccountModel.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/models\/Social_ProviderModel.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/models\/Social_ProviderModel.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/providers\/login\/BaseProvider.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/providers\/login\/BaseProvider.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/providers\/login\/Facebook.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/providers\/login\/Facebook.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/providers\/login\/Google.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/providers\/login\/Google.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/providers\/login\/Twitter.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/providers\/login\/Twitter.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/craft\/plugins\/social\/records\/Social_LoginAccountRecord.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/records\/Social_LoginAccountRecord.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/resources\/css\/social.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/resources\/css\/social-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/craft\/plugins\/social\/resources\/icon-mask.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/social\/resources\/icon-mask.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/social\/resources\/icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/social\/resources\/icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/social\/resources\/images\/defaultuser.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/plugins\/social\/resources\/images\/defaultuser.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/craft\/plugins\/social\/resources\/js\/social.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/resources\/js\/social-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/craft\/plugins\/social\/services\/Social_LoginAccountsService.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/services\/Social_LoginAccountsService.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/services\/Social_LoginProvidersService.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/services\/Social_LoginProvidersService.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/services\/Social_UserSessionService.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/services\/Social_UserSessionService.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/services\/SocialService.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/services\/SocialService.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/SocialPlugin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/SocialPlugin.php",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/_layouts\/cp.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/templates\/_layouts\/cp.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/_layouts\/settings.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/templates\/_layouts\/settings.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/_special\/install\/dependencies.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/templates\/_special\/install\/dependencies.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/templates\/index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/loginaccounts\/_edit.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/social\/templates\/loginaccounts\/_edit.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/loginaccounts\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/social\/templates\/loginaccounts\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/loginproviders\/_edit.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/social\/templates\/loginproviders\/_edit.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/loginproviders\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/social\/templates\/loginproviders\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/templates\/settings\/_index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/plugins\/social\/templates\/settings\/_index.html",
-		"oF": 0
-		},
-	"\/craft\/plugins\/social\/variables\/SocialVariable.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/craft\/plugins\/social\/variables\/SocialVariable.php",
-		"oF": 0
-		},
 	"\/craft\/storage\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -32803,6 +28750,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/122.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/122.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/124.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/124.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/13.jpg": {
 		"ft": 16384,
 		"iS": 757,
@@ -32974,11 +28941,53 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/07\/07b325081fade25fb08e04f15e0eead5bc7cdfb334728b140089d6062bbc4eb4.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/09\/09a31cad01682ec305b44d98e9675ca3756086600e08dd8e894fcd931642fc92.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/09\/09a31cad01682ec305b44d98e9675ca3756086600e08dd8e894fcd931642fc92.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/0d\/0d46fe17415be7cf63381ff8fd6e19980fdad936fe082ec14fb9ed8a3d2a6add.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/0d\/0d46fe17415be7cf63381ff8fd6e19980fdad936fe082ec14fb9ed8a3d2a6add.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/10\/10397d509f58f318d2bb817b69f0e65f37bc09aeb74a0f47ea567c73e099116d.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/10\/10397d509f58f318d2bb817b69f0e65f37bc09aeb74a0f47ea567c73e099116d.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/11\/1150e73871debf49063ad66a9ca601285d36090700cefa3bbd3117f7fd7e54fa.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/11\/1150e73871debf49063ad66a9ca601285d36090700cefa3bbd3117f7fd7e54fa.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/11\/11d01512ae2eb252e111bf87872d1ada49350b551ca985ed5029ca1ad335093f.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/11\/11d01512ae2eb252e111bf87872d1ada49350b551ca985ed5029ca1ad335093f.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/12\/12abd584815eeeeb534e0245a19fcd4e59fb47ba217b5985e0f19a26e9e8ba19.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/12\/12abd584815eeeeb534e0245a19fcd4e59fb47ba217b5985e0f19a26e9e8ba19.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/15\/15bb76dbecd3f698d20e113705eb6f5ab1fa87870c14b612d314e347f9b995a6.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/15\/15bb76dbecd3f698d20e113705eb6f5ab1fa87870c14b612d314e347f9b995a6.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/17\/1707c59fa8956221e103086184d7b5ee65f9150086a4017538474ed82235e1c2.php": {
@@ -32993,6 +29002,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/18\/18c03d0af665f8c1e779e3e52630cfd2bf803a1f599c3a4e5c12f6b11d8bc784.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/1a\/1adc6ff297a36553ca98d0d2bf146617010320333c48d0d3c67139a35c78884f.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/1a\/1adc6ff297a36553ca98d0d2bf146617010320333c48d0d3c67139a35c78884f.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/1b\/1ba91292975a5d090f94b9be4063b647eb1a9d2ddb6cc4440fc58fa88345a0d4.php": {
@@ -33037,6 +29053,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/27\/27adc1b18b0779fe414b4a1ef3f1e705061b378f64ab11292d86260017fa5222.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/2a\/2afd0de548ac5430fad16bcb997a750560f483aa5f9186a92c52498dbca60ad0.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/2a\/2afd0de548ac5430fad16bcb997a750560f483aa5f9186a92c52498dbca60ad0.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/2e\/2e0aadb031886f83656b7c4bb812e25ec5f8df074324dfdb80d7b095757062c9.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33065,6 +29088,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/34\/343b680c38ce979f45d692659948824a77c5afc4f50b4b7698f54f0e17867b00.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/35\/3519dd0ea660075a7822666c571b1e601ffbc11ee2b7aa45eb99d4cf1e22d5f4.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/35\/3519dd0ea660075a7822666c571b1e601ffbc11ee2b7aa45eb99d4cf1e22d5f4.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/35\/35aa59c9118579f5e215626243ba145355152ba3bd98bdda3a416e09a4ca268b.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33077,6 +29107,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/36\/36ddab0e22a8fc629a48348e1de38b12f0781927f5a0a9256e0d5fb6fbee8e8e.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/3a\/3a0b57050733d957d634ad2a91ce064a8afb1de219020f25248f18295548a5f5.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/3a\/3a0b57050733d957d634ad2a91ce064a8afb1de219020f25248f18295548a5f5.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/3a\/3a1313d7919bce1309817ce931ece4aff1d61ae06e24bf9f4606478d8d5696a0.php": {
@@ -33121,6 +29158,27 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/43\/433710a7182d36175d88a17ea331f0c66a40864458ffe061ac201e20ad6f647b.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/44\/447457b66b2815489bc8b8d4cca286b6332de27590268e1fe80b357a0ba82635.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/44\/447457b66b2815489bc8b8d4cca286b6332de27590268e1fe80b357a0ba82635.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/44\/44d39e278ff3b4c836cd4d1f34cfd12b68229f335349783ce5c34be2137d11ad.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/44\/44d39e278ff3b4c836cd4d1f34cfd12b68229f335349783ce5c34be2137d11ad.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/45\/4541dd080e447557d7c56ddca1410fdacb8aacc0d676ddf3393d7a301f667540.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/45\/4541dd080e447557d7c56ddca1410fdacb8aacc0d676ddf3393d7a301f667540.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/47\/4726d59bc623157a2180e08bab3c77b42e0eb8efa7a32eb3965399ae6e840a29.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33142,11 +29200,39 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/4b\/4b178adab0350e2ad42a7848390330c3cf1432738f8c06017e3350c65c2f51cb.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/4e\/4eaa8f1a7f54fc66926f115823a2d515126cac3bc2e526c47cdb660f9eadcb0e.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/4e\/4eaa8f1a7f54fc66926f115823a2d515126cac3bc2e526c47cdb660f9eadcb0e.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/50\/50788a2083328f0189bca71f3947b5d64fc06904d3c082fb85a3b15a616b4304.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/50\/50788a2083328f0189bca71f3947b5d64fc06904d3c082fb85a3b15a616b4304.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/56\/56e211fe0cebe9d81bb64af01ceeafaa788fa2754147b5f12f711191475ec4a3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/56\/56e211fe0cebe9d81bb64af01ceeafaa788fa2754147b5f12f711191475ec4a3.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/59\/59fe4937d526884a650e46e3669dd38aa77c2a3cb69eb91f701282bd38d90085.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/59\/59fe4937d526884a650e46e3669dd38aa77c2a3cb69eb91f701282bd38d90085.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/5a\/5a5ca2b71ee4645eb5391cfbff718c825d91a125c5710489c904bd2332ede635.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/5a\/5a5ca2b71ee4645eb5391cfbff718c825d91a125c5710489c904bd2332ede635.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/60\/60975782682f5d5591f0ddd535db69375d0292f41206a070d39650f13fe4d764.php": {
@@ -33170,6 +29256,20 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/62\/626c8c0705d69b8c9fe06965c35e2524688cb7c5f657880d0f343122290b662d.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/62\/62f9d59cb79dd5ffde1a219f6bbd824eb5017172eda4c4b0ec26495f31ed560d.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/62\/62f9d59cb79dd5ffde1a219f6bbd824eb5017172eda4c4b0ec26495f31ed560d.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/63\/63757ce39ad8e945b2f043da2eae0656681cdfa89111454ce10b9400eb00e5ce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/63\/63757ce39ad8e945b2f043da2eae0656681cdfa89111454ce10b9400eb00e5ce.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/63\/63b93c07aea22e6a5df849f5efc54cf95d388b37b198e15419c1c7b19403823b.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33189,6 +29289,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/67\/67bfd3339cc0fd5005d6e0695ac2a7dd9d53dba54cd71c9c4eca7881381bce1b.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/6a\/6a30b382c4fecb5bfb5512dc2bb05c36956fea0ff2f01eabc026c59d86a2fda8.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/6a\/6a30b382c4fecb5bfb5512dc2bb05c36956fea0ff2f01eabc026c59d86a2fda8.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/6a\/6a6615405ed1430c7092ee7e433c8fa2f545e262031711279fdf42707b6cc1fd.php": {
@@ -33245,6 +29352,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/76\/7607d595de91fb147969d180135614ec7025c7e0b034a3546ed08ccf6a2a8cff.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/77\/771538316189cb24f28dfef51bcd1aaaff39d7979c7e2ac780cd357b7d08f854.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/77\/771538316189cb24f28dfef51bcd1aaaff39d7979c7e2ac780cd357b7d08f854.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/77\/77ee77c9b3b7a6356a04c3118ae2d748bb7a1de6e0bc013683296270f8543715.php": {
@@ -33366,6 +29480,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/97\/97e03ca8ea5e029cf74eb0b6600430768f60502b34b27b449a9c4088bd54470f.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/9a\/9a8d2efc40a7ccba1855ed895d4f415760693874e4326df3e3a9ffd8bd063f21.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/9a\/9a8d2efc40a7ccba1855ed895d4f415760693874e4326df3e3a9ffd8bd063f21.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/9c\/9cb655c73b6f5a73ea86a0f2e767ebc9960520340af1a35ea0bdd6de60d18b4e.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33408,6 +29529,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/a5\/a5aff3c006b6a2a292951f3a1c891bd0a93b23e05150ad1e013e8ac8cde8aa44.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/a8\/a80ea085077df62602a850a8f70780b3bc7774fc5fb6bd84dc16da1b8221918f.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/a8\/a80ea085077df62602a850a8f70780b3bc7774fc5fb6bd84dc16da1b8221918f.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/a8\/a87d043593dc4f23998874098a87bb16d995aadaa8db6038821474857498880d.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33422,6 +29550,20 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/a8\/a8f1a176e8ae3b9a02a9b69b1eee2d3ba16017259c9648ca36b4668a58a6e6ae.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/aa\/aa6debc0de0e1f8af30ce667e21a3b82649d48be92dc98315e0e00024ffb0b1b.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/aa\/aa6debc0de0e1f8af30ce667e21a3b82649d48be92dc98315e0e00024ffb0b1b.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/aa\/aadf950baab5c80decd6e54bfd805b0d579e97974a1dd1187a83d7d767bf18c4.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/aa\/aadf950baab5c80decd6e54bfd805b0d579e97974a1dd1187a83d7d767bf18c4.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/ab\/abec4c88b7545639010c93320ae81fe76e72ccbd6fb016f53c65a7e84092b11f.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33429,11 +29571,25 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/ab\/abec4c88b7545639010c93320ae81fe76e72ccbd6fb016f53c65a7e84092b11f.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/ae\/aef70910108804d802979a68cfe37c27a81dd053ea8f01827fc32db0a733b3cd.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/ae\/aef70910108804d802979a68cfe37c27a81dd053ea8f01827fc32db0a733b3cd.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/af\/afb802ee20b90a2584a2cedc631e8f702e9862b0b7dbac19fba3100e30bd3890.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/af\/afb802ee20b90a2584a2cedc631e8f702e9862b0b7dbac19fba3100e30bd3890.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/b3\/b3536d1ff0e70bc242993463e5e776ed84dd7650e1642f5af6804909779d4070.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/b3\/b3536d1ff0e70bc242993463e5e776ed84dd7650e1642f5af6804909779d4070.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/b4\/b4cfe30da70be07a2249f1940800343428849560ae46c6e87f03bde2564fc829.php": {
@@ -33492,6 +29648,13 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/c4\/c441ce6f52bf9a338014cd158de561bcbde4e4fe7883f3d52bf71435bdb40b9c.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/cc\/cce37149600ff4a0e1e05295154ede061f52e07744a90e70db6f11c27fd6f777.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/cc\/cce37149600ff4a0e1e05295154ede061f52e07744a90e70db6f11c27fd6f777.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/cf\/cf1c926b5790750f01c2005dd30a60744c062227756ab7b35f9d618b5f66ba0c.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -33506,11 +29669,25 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/d0\/d03b10e4112a975d3079f1eb106e5121f6e469a9ec6d8e66613062999d7e1b1b.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/d1\/d1b4bdf2bda17b3fba88cda8c72d5325af9e88e6899c581db8b42804855f929d.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/d1\/d1b4bdf2bda17b3fba88cda8c72d5325af9e88e6899c581db8b42804855f929d.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/dd\/ddc5372aa99309e640041f53e183f53d7085acdb1a770bf5d20d90c71cc23145.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/dd\/ddc5372aa99309e640041f53e183f53d7085acdb1a770bf5d20d90c71cc23145.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/e0\/e08cb595d299598b047157390754d72e744845bc83fc3fc5ea3d07cc6cbac226.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/e0\/e08cb595d299598b047157390754d72e744845bc83fc3fc5ea3d07cc6cbac226.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/e1\/e15f01217b20683bb728ce141f686468c56ea6cc90052b747ba4fbbe2eb3a2cf.php": {
@@ -33520,11 +29697,25 @@
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/e1\/e15f01217b20683bb728ce141f686468c56ea6cc90052b747ba4fbbe2eb3a2cf.php",
 		"oF": 0
 		},
+	"\/craft\/storage\/runtime\/compiled_templates\/e2\/e2792eddba92f0072920e13b4b9d2d1ff8245344da2a28450775cd0b3d0da3e1.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/e2\/e2792eddba92f0072920e13b4b9d2d1ff8245344da2a28450775cd0b3d0da3e1.php",
+		"oF": 0
+		},
 	"\/craft\/storage\/runtime\/compiled_templates\/e4\/e49c79452e150f2ed4f0462c17a589adb54e2ba932ff28f94d955f5517928096.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/e4\/e49c79452e150f2ed4f0462c17a589adb54e2ba932ff28f94d955f5517928096.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/e5\/e53f423db327a9febb0f989387ff3892ad45e67661ade5378a9f94e4875b05d3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/e5\/e53f423db327a9febb0f989387ff3892ad45e67661ade5378a9f94e4875b05d3.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/ec\/ecba780dac8ac068f6debf896e67abd972f9797df6688e0dc2759ba289cd6ceb.php": {
@@ -33553,6 +29744,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/f3\/f338fdbe08ea723327c40493c8cfb3c39ada4fe4d67848b228e6a91b75aa907e.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/f6\/f608b17da02c8cc15cd39de3238e6958608d842656ce4ec9c9c7595c2af93ce7.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/f6\/f608b17da02c8cc15cd39de3238e6958608d842656ce4ec9c9c7595c2af93ce7.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/f9\/f96cb72fbcc1f9c6b8738173403191e1ef47aaab2778ac1db394d38a967a7f57.php": {
@@ -33752,11 +29950,74 @@
 		"oAP": "\/craft\/templates\/404.html",
 		"oF": 0
 		},
+	"\/craft\/templates\/_forms\/templates\/comment-approved.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comment-approved.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/comment-pending.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comment-pending.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/comment-spam.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comment-spam.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/comment-trashed.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comment-trashed.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/comment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comment.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/comments.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/comments.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/form-edit.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/form-edit.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_forms\/templates\/form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_forms\/templates\/form.html",
+		"oF": 0
+		},
 	"\/craft\/templates\/_layout.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/craft\/templates\/_layout.html",
+		"oF": 0
+		},
+	"\/craft\/templates\/_loclayout.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/craft\/templates\/_loclayout.html",
 		"oF": 0
 		},
 	"\/craft\/templates\/_loginlayout.html": {
