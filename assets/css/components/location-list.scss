@@ -60,6 +60,26 @@
   .loc-list-bar{
     padding: 20px 0 20px 0;
 
+
+    .loc-list-bar-half{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+
+      .loc-list-bar-cat{
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+      .loc-list-bar-rating{
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+
+
+
     h1{
       color: $black;
       margin: 0px;

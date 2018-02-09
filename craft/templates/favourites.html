@@ -5,49 +5,49 @@
 
 <div class="container compensator">
 
-	{% set lists = craft.shortlist.lists %}
+	<div class="location-list">
 
-	{% if lists is empty %}
-		<p>You have no lists at the moment.</p>
-	{% else %}
+		{% set lists = craft.shortlist.lists %}
 
-	{% for list in lists %}
-		<h1>{{ list.title }}</h1>
-
-		{% if list.items is empty %}
-			<p>This list is empty</p>
+		{% if lists is empty %}
+			<p>You have no lists at the moment.</p>
 		{% else %}
 
+		{% for list in lists %}
+			<h1>{{ list.title }}</h1>
+
+			{% if list.items is empty %}
+				<p>This list is empty</p>
+			{% else %}
 
 
+		    {% for item in list.items %}
 
-	    {% for item in list.items %}
+					<div class="location-image" style="background-image:url({{ item.element.locationPhoto[0].url }})">
+					</div>
 
-				<div class="location-image" style="background-image:url({{ item.element.locationPhoto[0].url }})">
-				</div>
+					<a href="{{ item.element.url }}">{{ item.element.title }}</a>
+					<a href="{{ item.removeActionUrl }}">remove</a>
+					</br>
 
-				<a href="{{ item.element.url }}">{{ item.element.title }}</a>
-				<a href="{{ item.removeActionUrl }}">remove</a>
-				</br>
-
-	    {% endfor %}
-
+		    {% endfor %}
 
 
+			{% endif %}
+
+		{% endfor %}
 
 		{% endif %}
 
-	{% endfor %}
+		<style media="screen">
+			.location-image{
+					width: 400px;
+					height: 200px;
+					background-size: contain;
+			}
+		</style>
 
-	{% endif %}
-
-	<style media="screen">
-		.location-image{
-				width: 400px;
-				height: 200px;
-				background-size: contain;
-		}
-	</style>
+	</div>
 
 </div>
 

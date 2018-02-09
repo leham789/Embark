@@ -43,14 +43,59 @@
 
 		<div class="loc-topbar">
 
-			<h1>{{ entry.title }}</h1>
-			{% for category in entry.locationType %}
-				<h1>{{ category.title }}</h1>
-			{% endfor %}
+			<div class="loc-topbar-info">
+
+				<h1>{{ entry.title }}</h1>
+				{% for category in entry.locationType %}
+					<h1>{{ category.title }}</h1>
+				{% endfor %}
+
+			</div>
+
+			<div class="loc-topbar-rating">
+
+				<div class="star-ratings">
+					{% set averageRating = craft.commentsrating.elementRating(entry.id) %}
+					{% set averageRatingBlank = 5 - averageRating %}
+
+					{% if averageRating > '0' %}
+
+						{% for star in 1..averageRating %}
+
+								<div class="icon-star is-active"></div>
+
+						{% endfor %}
+
+						{% if averageRating < 5 %}
+
+							{% for star in 1..averageRatingBlank %}
+
+									<div class="icon-star"></div>
+
+							{% endfor %}
+
+						{% endif %}
+
+					{% endif %}
+
+					{% if averageRating == 0 %}
+					<div class="icon-star is-active"></div>
+					<div class="icon-star is-active"></div>
+					<div class="icon-star is-active"></div>
+					<div class="icon-star"></div>
+					<div class="icon-star"></div>
+
+					{% endif %}
+
+				</div>
+
+			</div>
 
 		</div>
 
-		<p>{{ craft.commentsrating.elementRating(entry.id) }}</p>
+		<div class="website-btn">
+			<a href="{{ entry.locationWebsite }}" target="_blank" title="{{ entry.title }}">Visit Website</a>
+		</div>
 
 		<p>{{ entry.locationOverview }}</p>
 
@@ -61,31 +106,6 @@
 		<p>{{ entry.map.lat }}, {{ entry.map.lng }}</p>
 
 		<p id="loc-distance"></p>
-
-		<div class="star-rating-ting">
-		{% set averageRating = craft.commentsrating.elementRating(entry.id) %}
-		{% set averageRatingBlank = 5 - averageRating %}
-
-		{% if averageRating > '0' %}
-
-			{% for star in 1..averageRating %}
-
-					<div class="icon-star is-active"></div>
-
-			{% endfor %}
-
-			{% if averageRating < 5 %}
-
-					{% for star in 1..averageRatingBlank %}
-
-							<div class="icon-star"></div>
-
-					{% endfor %}
-
-			{% endif %}
-
-		{% endif %}
-		</div>
 
 
 		{% set params = {
@@ -143,7 +163,7 @@
 					lat: {{ entry.map.lat }},
 					lng: {{ entry.map.lng }}
 				},
-				zoom: 15,
+				zoom: 16,
 				minZoom: 7, maxZoom: 20,
 				disableDefaultUI: true,
 				zoomControl: true,

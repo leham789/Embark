@@ -13,11 +13,20 @@
   {% if entries|length %}
       <p>{{ entries|length }} results:</p>
 
-      <ul>
+			<div class="location-list">
+
+
           {% for entry in entries %}
-              <li><a href="{{ entry.url }}">{{ entry.title }}</a></li>
+
+				  {% set item = craft.shortlist.item(entry.id) %}
+					{% set image = entry.locationPhoto[0] ?? null%}
+
+						{% include "_blocks/_locations" %}
+
           {% endfor %}
-      </ul>
+
+			</div>
+
   {% else %}
       <p>Your search for “{{ query }}” didn’t return any results.</p>
   {% endif %}
