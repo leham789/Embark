@@ -3,12 +3,11 @@
 {% requireLogin %}
 {% block content %}
 
-<div class="container compensator">
+<div class="compensator">
 
-	<h1>Search</h1>
-
+<div id="mapcontainer">
 	<div id="map"></div>
-
+</div>
 	<!-- <p>{{ entry.map.lat }}, {{ entry.map.lng }}</p> -->
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3stoQSm9dPgQ5zyrEtYPMIS5XlDZHHBA&callback=initMap"></script>
@@ -22,7 +21,7 @@
 					 minZoom: 7, maxZoom: 20,
 					 disableDefaultUI: true,
 					 zoomControl: true,
-					 scrollwheel: false,
+					 scrollwheel: true,
 					 styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"saturation":"0"},{"lightness":"0"},{"gamma":"1"},{"weight":"0.01"},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#40bbc0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#40bbc0"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#676060"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
          });
 

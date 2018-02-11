@@ -32,69 +32,64 @@
 
 <body>
 
-	<div class="">
-
-		<header id="header">
-
-			<div class="container">
-
-				<form action="{{ url('search/results') }}">
-					<input type="search" name="q" placeholder="Search...">
-					<!-- <input type="submit" value="Go"> -->
-				</form>
-
-			</div>
-
-		</header>
-
-
-
-		<div class="navbar">
-			<ul id="navbar-list">
-				<li {% if craft.request.firstSegment == "" %}class="active"{% endif %}>
-					<a href="{{ url('') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/general/explore-icon.svg" alt="explore"/>
-						<p>Explore</p>
-					</a>
-				</li>
-				<li {% if craft.request.firstSegment == "search" %}class="active"{% endif %}>
-					<a href="{{ url('search') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/general/search-icon.svg" alt="explore"/>
-						<p>Search</p>
-					</a>
-				</li>
-				<li {% if craft.request.firstSegment == "favourites" %}class="active"{% endif %}>
-					<a href="{{ url('favourites') }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/general/favourites-icon.svg" alt="explore"/>
-						<p>Favourites</p>
-					</a>
-				</li>
-				<li {% if craft.request.firstSegment == "profile" %}class="active"{% endif %}>
-					<a href="{{ siteUrl }}profile/{{ user }}">
-						<img class="svg" src="{{ siteUrl }}assets/img/general/profile-icon.svg" alt="explore"/>
-						<p>Profile</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-	</div>
-
-
-		<main id="content" role="main">
-			{% block content %}
-
-			{% endblock %}
-		</main>
-
+	<header id="header">
 
 		<div class="container">
 
-			<footer id="footer">
-
-			</footer>
+			<form action="{{ url('search/results') }}">
+				<input type="search" name="q" placeholder="Search...">
+				<input type="submit" value="&nbsp;">
+			</form>
 
 		</div>
+
+	</header>
+
+
+	<div class="navbar">
+		<ul id="navbar-list">
+			<li {% if craft.request.firstSegment == "" %}class="active"{% endif %}>
+				<a href="{{ url('') }}">
+					<img class="svg" src="{{ siteUrl }}assets/img/general/explore-icon.svg" alt="explore"/>
+					<p>Explore</p>
+				</a>
+			</li>
+			<li {% if craft.request.firstSegment == "search" %}class="active"{% endif %}>
+				<a href="{{ url('search') }}">
+					<img class="svg" src="{{ siteUrl }}assets/img/general/search-icon.svg" alt="explore"/>
+					<p>Search</p>
+				</a>
+			</li>
+			<li {% if craft.request.firstSegment == "favourites" %}class="active"{% endif %}>
+				<a href="{{ url('favourites') }}">
+					<img class="svg" src="{{ siteUrl }}assets/img/general/favourites-icon.svg" alt="explore"/>
+					<p>Favourites</p>
+				</a>
+			</li>
+			<li {% if craft.request.firstSegment == "profile" %}class="active"{% endif %}>
+				<a href="{{ siteUrl }}profile/{{ user }}">
+					<img class="svg" src="{{ siteUrl }}assets/img/general/profile-icon.svg" alt="explore"/>
+					<p>Profile</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+
+	<main id="content" role="main">
+		{% block content %}
+
+		{% endblock %}
+	</main>
+
+
+	<div class="container">
+
+		<footer id="footer">
+
+		</footer>
+
+	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://use.fontawesome.com/0a8bd07c77.js"></script>
