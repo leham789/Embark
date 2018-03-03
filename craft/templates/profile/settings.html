@@ -1,4 +1,4 @@
-{% extends "_layout" %}
+{% extends "_profilelayout" %}
 {% set title = "Profile Settings" %}
 {% requireLogin %}
 {% block content %}
@@ -7,70 +7,73 @@
 
 <div class="container compensator">
 
-	<h1>Settings</h1>
+	<div class="profile-page">
 
-	<!-- Update photo -->
-  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
-		<input type="hidden" name="action" value="users/saveUser">
-		<input type="hidden" name="redirect" value="profile/{{ currentUser.username }}/settings">
-		<input type="hidden" name="userId" value="{{ currentUser.id }}">
+		<!-- Update photo -->
+	  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+			<input type="hidden" name="action" value="users/saveUser">
+			<input type="hidden" name="redirect" value="profile/{{ currentUser.username }}/settings">
+			<input type="hidden" name="userId" value="{{ currentUser.id }}">
+
+			{% if currentUser.photoUrl %}
+			<img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+			{% else %}
+				<img  src="{{ siteUrl }}assets/img/general/profile-icon.svg"/>
+			{% endif %}
+
+			{% if currentUser.photoUrl %}
+			<input type="file" name="userPhoto" value="Change Photo">
+			{% else %}
+				<input type="file" name="userPhoto" value="Upload">
+			{% endif %}
+
+			<input value="Update Photo" type="submit">
+
+	  </form>
+
+		<h1>Settings</h1>
 
 		{% if currentUser.photoUrl %}
-			<img src="{{ currentUser.photoUrl }}" />
+			<form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+					{{ getCsrfInput() }}
+					<input type="hidden" name="action" value="users/saveUser">
+					<input type="hidden" name="redirect" value="profile/{{ currentUser.username }}/settings">
+					<input type="hidden" name="userId" value="{{ currentUser.id }}">
+
+					<input type="hidden" name="deleteUserPhoto" value="1" />
+
+					<input type="submit" value="Delete Photo">
+			</form>
 		{% else %}
-			<img  src="{{ siteUrl }}assets/img/general/profile-icon.svg"/>
+
 		{% endif %}
 
-		{% if currentUser.photoUrl %}
-		<input type="file" name="userPhoto" value="Change Photo">
-		{% else %}
-			<input type="file" name="userPhoto" value="Upload">
-		{% endif %}
 
-		<input value="Update Photo" type="submit">
 
-  </form>
+	  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+	      {{ getCsrfInput() }}
+	      <input type="hidden" name="action" value="users/saveUser">
+	      <input type="hidden" name="redirect" value="profile/{{ currentUser.username }}">
+	      <input type="hidden" name="userId" value="{{ currentUser.id }}">
 
-	{% if currentUser.photoUrl %}
-		<form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
-				{{ getCsrfInput() }}
-				<input type="hidden" name="action" value="users/saveUser">
-				<input type="hidden" name="redirect" value="profile/{{ currentUser.username }}/settings">
-				<input type="hidden" name="userId" value="{{ currentUser.id }}">
+				<!-- Update Bio -->
+	      <label for="bio">Bio</label>
+	      <textarea id="bio" name="fields[userBio]">{{ currentUser.userBio }}</textarea>
+	      <input type="submit" value="Save Profile">
+	  </form>
 
-				<input type="hidden" name="deleteUserPhoto" value="1" />
 
-				<input type="submit" value="Delete Photo">
+
+		<!-- Delete Account -->
+		<form method="post" accept-charset="UTF-8">
+		  {{ getCsrfInput() }}
+		  <input type="hidden" name="action" value="users/deleteUser">
+		  <input type="hidden" name="redirect" value="account/delete/success">
+		  <input type="hidden" name="userId" value="{{ currentUser.id }}">
+		  <button type="submit" class="" style="color:red;">Delete my account!</button>
 		</form>
-	{% else %}
 
-	{% endif %}
-
-
-
-  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
-      {{ getCsrfInput() }}
-      <input type="hidden" name="action" value="users/saveUser">
-      <input type="hidden" name="redirect" value="profile/{{ currentUser.username }}">
-      <input type="hidden" name="userId" value="{{ currentUser.id }}">
-
-			<!-- Update Bio -->
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="fields[userBio]">{{ currentUser.userBio }}</textarea>
-      <input type="submit" value="Save Profile">
-  </form>
-
-
-
-	<!-- Delete Account -->
-	<form method="post" accept-charset="UTF-8">
-	  {{ getCsrfInput() }}
-	  <input type="hidden" name="action" value="users/deleteUser">
-	  <input type="hidden" name="redirect" value="account/delete/success">
-	  <input type="hidden" name="userId" value="{{ currentUser.id }}">
-	  <button type="submit" class="" style="color:red;">Delete my account!</button>
-	</form>
-
+	</div>
 
 </div>
 

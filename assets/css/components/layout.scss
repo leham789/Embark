@@ -5,6 +5,7 @@ header{
   top: 0;
   width: 100%;
   z-index: 999;
+  transition: all 0.2s ease-in-out;
 
   h1{
     color: $white;
@@ -79,6 +80,10 @@ header{
   bottom: 0;
   width: 100%;
   z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+
 
   ul{
     padding: 0px;
@@ -132,4 +137,69 @@ header{
       }
     }
   }
+}
+
+.header-desktop{
+  display: none;
+  align-items: center;
+
+  .header-logo{
+    flex: 1;
+    flex-grow: 0;
+
+    img{
+      width: 50px;
+    }
+  }
+  .header-nav{
+    flex: 1;
+    flex-grow: 1;
+
+    ul{
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+
+      li{
+        float: left;
+        padding-left: 5%;
+      }
+    }
+
+  }
+  .header-search{
+    flex: 1;
+    flex-grow: 1;
+    max-width: 500px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .navbar{
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  header{
+    height: 80px;
+
+    .container {
+      padding-top: 11px;
+    }
+
+    .header-mobile{
+      display: none;
+    }
+    .header-desktop{
+      display: flex;
+    }
+  }
+
+  .compensator{
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+
 }

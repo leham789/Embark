@@ -1,14 +1,64 @@
+.profile-header{
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1000;
+
+  h1{
+    color: $white;
+    padding: 0px;
+    text-align: left;
+    margin: 0px;
+  }
+  .profile-header-left{
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+  }
+  .profile-header-right{
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-top: 20px;
+
+    a{
+      padding-top: 4px;
+    }
+  }
+}
+
+
 .profile-page{
 
-  img{
-    width: 40%;
-    border-radius: 50%;
+  .profile-picture{
+    width: 100%;
   }
-
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1000;
+    margin-top: -100px!important;
+    border: 2px solid white;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+  }
   .logout-btn{
     padding: 0;
     background-color: transparent;
     border: 0px;
   }
-  
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .profile-page img{
+    margin-top: 0!important;
+  }
+
 }

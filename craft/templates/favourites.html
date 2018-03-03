@@ -23,13 +23,138 @@
 
 		    {% for item in list.items %}
 
-					<div class="location-image" style="background-image:url({{ item.element.locationPhoto[0].url }})">
+				<div class="locations">
+
+					<div class="loc-img" style="background-image:url({{ item.element.locationPhoto[0].url }})">
+
+						<div class="loc-img-inside">
+
+							<div class="loc-dist">
+								<p id="loc-distance"></p>
+							</div>
+
+							<div class="loc-fav">
+
+								{% if item.inList %}
+									<a href="{{ item.addActionUrl }}">
+										<img class="" src="{{ siteUrl }}assets/img/general/heart-full.svg" alt="Remove from favourites"/>
+									</a>
+								{% else %}
+									<a href="{{ item.removeActionUrl }}">
+										<img class="" src="{{ siteUrl }}assets/img/general/heart-full.svg" alt="Add to favourites"/>
+									</a>
+								{% endif %}
+
+							</div>
+
+						</div>
+
+						<a href="{{ item.element.url }}">
+
+							<div class="loc-img-link">
+
+							</div>
+
+						</a>
+
 					</div>
 
-					<a href="{{ item.element.url }}">{{ item.element.title }}</a>
-					<a href="{{ item.removeActionUrl }}">remove</a>
-					</br>
+					<a href="{{ item.element.url }}">
 
+					<div class="loc-list-bar container">
+
+						<div class="loc-list-bar-title">
+
+							<h1>{{ item.element.title }}</h1>
+
+						</div>
+
+						<div class="loc-list-bar-half">
+
+							<div class="loc-list-bar-cat">
+
+								{% for category in item.element.locationType %}
+									<p>{{ category.title }}</p>
+								{% endfor %}
+
+							</div>
+
+							<div class="loc-list-bar-rating">
+
+								<div class="star-ratings">
+
+									{% set averageRating = craft.commentsrating.elementRating(item.element.id) %}
+									{% set averageRatingBlank = 5 - averageRating %}
+
+									{% if averageRating > '0' %}
+
+										{% for star in 1..averageRating %}
+
+											<div class="icon-star is-active"></div>
+
+										{% endfor %}
+
+										{% if averageRating < 5 %}
+
+											{% for star in 1..averageRatingBlank %}
+
+												<div class="icon-star"></div>
+
+											{% endfor %}
+
+										{% endif %}
+
+									{% endif %}
+
+									{% if averageRating == 0 %}
+									<div class="icon-star is-active"></div>
+									<div class="icon-star is-active"></div>
+									<div class="icon-star is-active"></div>
+									<div class="icon-star"></div>
+									<div class="icon-star"></div>
+
+									{% endif %}
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					</a>
+
+				</div>
+
+				<script type="text/javascript">
+				  function CalcDistanceBetween(lat1, lon1, lat2, lon2) {
+				    var R = 3958.7558657440545;
+				    var dLat = toRad(lat2-lat1);
+				    var dLon = toRad(lon2-lon1);
+				    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+				            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+				            Math.sin(dLon/2) * Math.sin(dLon/2);
+				    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+				    var d = R * c;
+				    return d;
+				  }
+
+				  function toRad(Value) {
+				      return Value * Math.PI / 180;
+				  }
+
+				  var destinationLongitude = {{ item.element.map.lng }}
+				  var destinationLatitude = {{ item.element.map.lat }}
+				  var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(2)
+
+				  console.log(
+				    finalmiles
+				  );
+
+				  var output = document.getElementById("loc-distance");
+				  output.innerHTML = finalmiles + ' miles away';
+				</script>
 
 		    {% endfor %}
 
@@ -38,14 +163,6 @@
 		{% endfor %}
 
 		{% endif %}
-
-		<style media="screen">
-			.location-image{
-					width: 400px;
-					height: 200px;
-					background-size: contain;
-			}
-		</style>
 
 	</div>
 

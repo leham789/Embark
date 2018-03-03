@@ -1,4 +1,4 @@
-{% extends "_layout" %}
+{% extends "_profilelayout" %}
 {% set title = user.username %}
 {% requireLogin %}
 {% block content %}
@@ -10,32 +10,33 @@
 
 {% set search = user %}
 
-  <div class="container compensator">
+<div class="container compensator">
 
-    <div class="profile-page">
+  <div class="profile-page">
 
-      <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+  <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
 
-      {% if currentUser %}
-          <p>{{ currentUser}}</p>
-          <button onclick="window.localStorage.clear();" class="logout-btn">
-            <a href="{{ url('logout') }}">Logout</a>
-          </button>
-      {% else %}
-          <a href="{{ url('login') }}">Login</a>
-      {% endif %}
 
-      {{ entry.body }}
+    {% if currentUser %}
+        <p>{{ currentUser}}</p>
+        <button onclick="window.localStorage.clear();" class="logout-btn">
+          <a href="{{ url('logout') }}">Logout</a>
+        </button>
+    {% else %}
+        <a href="{{ url('login') }}">Login</a>
+    {% endif %}
 
-      <p>{{ user.fullname }}</p>
-      <p>{{ user.email }}</p>
-      <p>{{ user.userBio }}</p>
+    {{ entry.body }}
 
-      <a href="{{ currentUser.username }}/settings">settings</a>
+    <p>{{ user.fullname }}</p>
+    <p>{{ user.email }}</p>
+    <p>{{ user.userBio }}</p>
 
-    </div>
+    <a href="{{ currentUser.username }}/settings">settings</a>
 
   </div>
+
+</div>
 
 
 {% endblock %}

@@ -46,8 +46,9 @@ h1{
 }
 
 .compensator{
-  padding-bottom: 67px;
   padding-top: 110px;
+  padding-bottom: 67px;
+  transition: all 0.2s ease-in-out;
 }
 
 @include selection {

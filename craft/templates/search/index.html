@@ -8,62 +8,82 @@
 <div id="mapcontainer">
 	<div id="map"></div>
 </div>
-	<!-- <p>{{ entry.map.lat }}, {{ entry.map.lng }}</p> -->
+
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3stoQSm9dPgQ5zyrEtYPMIS5XlDZHHBA&callback=initMap"></script>
 
 	<script>
-       var map, infoWindow, marker;
-       function initMap() {
-         map = new google.maps.Map(document.getElementById('map'), {
-           center: {lat: 51.509865, lng: -0.118092},
-           zoom: 11,
-					 minZoom: 7, maxZoom: 20,
-					 disableDefaultUI: true,
-					 zoomControl: true,
-					 scrollwheel: true,
-					 styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"saturation":"0"},{"lightness":"0"},{"gamma":"1"},{"weight":"0.01"},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#40bbc0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#40bbc0"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#676060"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
-         });
+		 var map, infoWindow, marker;
+		 function initMap() {
+		   map = new google.maps.Map(document.getElementById('map'), {
+		     center: {lat: 51.509865, lng: -0.118092},
+		     zoom: 11,
+				 minZoom: 7, maxZoom: 20,
+				 disableDefaultUI: true,
+				 zoomControl: true,
+				 scrollwheel: true,
+				 styles: [{"featureType":"all","elementType":"geometry.fill","stylers":[{"weight":"2.00"}]},{"featureType":"all","elementType":"geometry.stroke","stylers":[{"color":"#9c9c9c"}]},{"featureType":"all","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#7b7b7b"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"saturation":"0"},{"lightness":"0"},{"gamma":"1"},{"weight":"0.01"},{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#40bbc0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#40bbc0"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#676060"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]}]
+		   });
 
-         infoWindow = new google.maps.InfoWindow;
+		   infoWindow = new google.maps.InfoWindow;
 
-				 marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
-                    map: map,
-                    title: 'Snazzy!'
-                });
+			 pin = {
+					path: 'M5,0.329029036 C2.23871014,0.329029036 0,2.56773917 0,5.32902904 C0,8.0903189 5,18.1645145 5,18.1645145 C5,18.1645145 10,8.09049725 10,5.32902904 C10,2.56756082 7.76146822,0.329029036 5,0.329029036 Z M5,7.54829849 C3.77452379,7.54829849 2.7809089,6.55450524 2.7809089,5.32920739 C2.7809089,4.10355283 3.77452379,3.11011629 5,3.11011629 C6.22565456,3.11011629 7.2190911,4.10355283 7.2190911,5.32920739 C7.21926946,6.55450524 6.22565456,7.54829849 5,7.54829849 Z',
+					fillColor: '#000000',
+					fillOpacity: 0.9,
+					scale: 2,
+				 anchor: new google.maps.Point(10, 17.84),
+					strokeWeight: 0
+				};
 
-         //Geolocation.
-         if (navigator.geolocation) {
-           navigator.geolocation.getCurrentPosition(function(position) {
-             var pos = {
-               lat: position.coords.latitude,
-               lng: position.coords.longitude
-             };
+			'{% for entry in craft.entries.section('locations') %}'
 
-             infoWindow.setPosition(pos);
-             infoWindow.setContent('Your Current Location');
-             infoWindow.open(map);
-             map.setCenter(pos);
-						 map.setZoom(14);
-           }, function() {
-             handleLocationError(true, infoWindow, map.getCenter());
-           });
-         } else {
-           handleLocationError(false, infoWindow, map.getCenter());
-         }
-       }
+			 var marker = new google.maps.Marker({
+		   		position: new google.maps.LatLng({{ entry.map.lat }}, {{ entry.map.lng }}),
+		  		map: map,
+					icon: pin,
+					url: "{{ entry.url }}",
+		  		title: "{{ entry.title }}"
+		   });
 
-       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-         infoWindow.setPosition(pos);
-         infoWindow.setContent(browserHasGeolocation ?
-                               'Error: The Geolocation service failed.' :
-                               'Error: Your browser doesn\'t support geolocation.');
-         infoWindow.open(map);
-       }
+			 google.maps.event.addListener(marker, 'click', function() {
+			 		window.location.href = this.url;
+			 });
 
-     </script>
+			 '{% endfor %}'
 
+
+
+		   //Geolocation.
+		   if (navigator.geolocation) {
+		     navigator.geolocation.getCurrentPosition(function(position) {
+		       var pos = {
+		         lat: position.coords.latitude,
+		         lng: position.coords.longitude
+		       };
+
+		       infoWindow.setPosition(pos);
+		       infoWindow.setContent('Your Are Here!');
+		       infoWindow.open(map);
+		       map.setCenter(pos);
+					 map.setZoom(14);
+		     }, function() {
+		       handleLocationError(true, infoWindow, map.getCenter());
+		     });
+		   } else {
+		     handleLocationError(false, infoWindow, map.getCenter());
+		   }
+		 }
+
+		 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+		   infoWindow.setPosition(pos);
+		   infoWindow.setContent(browserHasGeolocation ?
+		                         'Error: The Geolocation service failed.' :
+		                         'Error: Your browser doesn\'t support geolocation.');
+		   infoWindow.open(map);
+		 }
+
+	</script>
 
 </div>
 

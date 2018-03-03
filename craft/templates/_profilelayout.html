@@ -34,19 +34,27 @@
 
 	<header id="header">
 
-		<div class="container header-mobile">
+		<div class="container header-mobile" style="padding-top: 0px;">
 
-			<form action="{{ url('search/results') }}">
-				<input type="search" name="q" placeholder="Search...">
-				<input type="submit" value="&nbsp;">
-			</form>
+			<div class="profile-header">
+
+				<div class="profile-header-left">
+					<h1>Profile</h1>
+				</div>
+
+				<div class="profile-header-right">
+					<a href="{{ siteUrl }}profile/{{ user }}">
+						<img class="svg" src="{{ siteUrl }}assets/img/general/add.svg" alt="explore"/>
+					</a>
+				</div>
+
+			</div>
 
 		</div>
 
 		<div class="container header-desktop">
 
 			<div class="header-logo">
-
 				<a href="{{ url('') }}">
 					<img class="login-logo" src="{{ siteUrl }}assets/img/general/logo-white.svg" alt="Logo">
 				</a>
@@ -119,7 +127,7 @@
 	</div>
 
 
-	<main id="content" role="main">
+	<main id="content" role="main" class="profile">
 		{% block content %}
 
 		{% endblock %}

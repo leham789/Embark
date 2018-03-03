@@ -1,11 +1,11 @@
 <div class="locations">
 
-    <div class="loc-img" style="background-image: url({{image.url}});">
+		<div class="loc-img" style="background-image:url({{ item.element.locationPhoto[0].url }})">
 
       <div class="loc-img-inside">
 
         <div class="loc-dist">
-          <p>0.0 miles away</p>
+          <p id="loc-distance"></p>
         </div>
 
         <div class="loc-fav">
@@ -24,7 +24,7 @@
 
       </div>
 
-      <a href="{{ entry.url }}">
+      <a href="{{ item.element.url }}">
 
         <div class="loc-img-link">
 
@@ -34,13 +34,13 @@
 
     </div>
 
-    <a href="{{ entry.url }}">
+    <a href="{{ item.element.url }}">
 
     <div class="loc-list-bar container">
 
       <div class="loc-list-bar-title">
 
-        <h1>{{ entry.title }}</h1>
+        <h1>{{ item.element.title }}</h1>
 
       </div>
 
@@ -48,7 +48,7 @@
 
         <div class="loc-list-bar-cat">
 
-          {% for category in entry.locationType %}
+          {% for category in item.element.locationType %}
             <p>{{ category.title }}</p>
           {% endfor %}
 
@@ -57,7 +57,7 @@
         <div class="loc-list-bar-rating">
 
           <div class="star-ratings">
-            {% set averageRating = craft.commentsrating.elementRating(entry.id) %}
+            {% set averageRating = craft.commentsrating.elementRating(item.element.id) %}
             {% set averageRatingBlank = 5 - averageRating %}
 
             {% if averageRating > '0' %}
@@ -100,3 +100,33 @@
     </a>
 
 </div>
+
+
+<script type="text/javascript">
+  function CalcDistanceBetween(lat1, lon1, lat2, lon2) {
+    var R = 3958.7558657440545;
+    var dLat = toRad(lat2-lat1);
+    var dLon = toRad(lon2-lon1);
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    var d = R * c;
+    return d;
+  }
+
+  function toRad(Value) {
+      return Value * Math.PI / 180;
+  }
+
+  var destinationLongitude = {{ entry.map.lng }}
+  var destinationLatitude = {{ entry.map.lat }}
+  var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(2)
+
+  console.log(
+    finalmiles
+  );
+
+  var output = document.getElementById("loc-distance");
+  output.innerHTML = finalmiles + ' miles away';
+</script>
