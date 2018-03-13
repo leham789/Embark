@@ -7,10 +7,17 @@
 
   <h1>{{ category }}</h1>
 
+  <div class="location-list">
+
   {% set entries = craft.entries.relatedTo(category) %}
   {% for entry in entries %}
-          <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+  {% set item = craft.shortlist.item(entry.id) %}
+  {% set image = entry.locationPhoto[0] ?? null%}
+
+    {% include "_blocks/_locations" %}
   {% endfor %}
+
+  </div>
 
 </div>
 

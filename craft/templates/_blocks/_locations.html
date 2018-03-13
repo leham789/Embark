@@ -5,7 +5,7 @@
       <div class="loc-img-inside">
 
         <div class="loc-dist">
-          <p id="loc-distance"></p>
+          <p class="loc-distance" id="{{ item.element.id }}"></p>
         </div>
 
         <div class="loc-fav">
@@ -127,6 +127,8 @@
     finalmiles
   );
 
-  var output = document.getElementById("loc-distance");
+	var id = {{ item.element.id }}
+
+  var output = document.getElementById(id);
   output.innerHTML = finalmiles + ' miles away';
 </script>
