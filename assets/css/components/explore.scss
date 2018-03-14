@@ -1,0 +1,70 @@
+.scroller {
+  float: left;
+  position: absolute;
+  z-index: 800;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding-bottom: 3px;
+  margin-top: 34px;
+  -webkit-overflow-scrolling: touch;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+.scroller-background{
+  height: 320px;
+  background: $brand-gradient;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  margin: 110px 0 45px 0;
+  padding-bottom: 0px;
+  transition: all 0.2s ease-in-out;
+
+  .explore-title{
+    color:$white;
+    margin-top: 0px;
+  }
+}
+
+.scroller-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+
+  .scroller-title-left{
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .scroller-title-right{
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: right;
+
+    a{
+      text-decoration: none;
+      color: $white;
+      float: right;
+    }
+
+    h1{
+      text-transform: none;
+      letter-spacing: 0.5px;
+      float: left;
+      padding-top: 1px;
+    }
+
+    img{
+      height: 13px;
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+.explore-compensator{
+  padding-bottom: 67px;
+}

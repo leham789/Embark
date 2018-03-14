@@ -5,7 +5,7 @@
 
 <div class="container compensator">
 
-	<h1>Search Results</h1>
+	<h1 class="page-title">Search Results</h1>
 
   {% set query = craft.request.getParam('q') %}
   {% set entries = craft.entries.search(query).order('score') %}

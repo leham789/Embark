@@ -1,4 +1,4 @@
-{% extends "_layout" %}
+{% extends "_layouts/_layout" %}
 {% set title = "Favourites" %}
 {% requireLogin %}
 {% block content %}
@@ -14,12 +14,11 @@
 		{% else %}
 
 		{% for list in lists %}
-			<h1>{{ list.title }}</h1>
+			<h1 class="page-title">{{ list.title }}</h1>
 
 			{% if list.items is empty %}
 				<p>This list is empty</p>
 			{% else %}
-
 
 		    {% for item in list.items %}
 

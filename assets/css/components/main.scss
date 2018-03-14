@@ -37,6 +37,13 @@ h1{
   font-weight: 500;
 }
 
+.page-title{
+  letter-spacing: 3px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: $brand-dark;
+  margin: 20px 0 20px 0;
+}
 
 .container{
   width: 90%;

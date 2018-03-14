@@ -1,0 +1,27 @@
+{% extends "_layouts/_layout" %}
+{% set title = "Recommended" %}
+{% requireLogin %}
+{% block content %}
+
+<div class="container compensator">
+
+	<h1 class="page-title">Recommended</h1>
+
+	<div class="location-list">
+
+		{% for entry in craft.entries.section('locations').limit(10) %}
+		{% set item = craft.shortlist.item(entry.id) %}
+		{% set image = entry.locationPhoto[0] ?? null%}
+
+		{% if entry.featured == "1" %}
+
+			{% include "_blocks/_locations"	%}
+
+		{% endif %}
+
+		{% endfor %}
+	</div>
+
+</div>
+
+{% endblock %}

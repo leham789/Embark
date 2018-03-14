@@ -1,11 +1,11 @@
-{% extends "_layout" %}
+{% extends "_layouts/_layout" %}
 {% set title = "City List" %}
 {% requireLogin %}
 {% block content %}
 
 <div class="container compensator">
 
-	<h1>{{ category }}</h1>
+	<h1 class="page-title">{{ category }}</h1>
 
 	{% for entry in craft.categories.group('city').find() %}
 	{% set image = entry.locationPhoto.first() %}

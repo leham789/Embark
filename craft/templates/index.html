@@ -1,21 +1,56 @@
-{% extends "_layout" %}
+{% extends "_layouts/_layout" %}
 {% set title = "Explore" %}
 {% requireLogin %}
 {% block content %}
 
-<div class="container compensator">
+<div class="scroller">
 
-	<h1>Explore</h1>
+
+	{% for entry in craft.entries.section('locations').limit(10) %}
+	{% set item = craft.shortlist.item(entry.id) %}
+	{% set image = entry.locationPhoto[0] ?? null%}
+
+	{% if entry.featured == "1" %}
+
+		{% include "_blocks/_locationscroll"	%}
+
+	{% endif %}
+
+	{% endfor %}
+
+</div>
+
+<div class="scroller-background">
+
+	<div class="container scroller-title">
+		<div class="scroller-title-left">
+			<h1 class="page-title explore-title">Recommended</h1>
+		</div>
+		<div class="scroller-title-right">
+			<a href="{{ url('recommended') }}">
+				<h1 class="page-title explore-title">See All</h1>
+				<img src="{{ siteUrl }}assets/img/general/Back.svg" alt="explore"/>
+			</a>
+
+		</div>
+	</div>
+
+</div>
+
+
+<div class="container explore-compensator">
+
+	<h1 class="page-title">Near Me</h1>
 
 	<div class="location-list">
 
-	{% for entry in craft.entries.section('locations') %}
-  {% set item = craft.shortlist.item(entry.id) %}
-	{% set image = entry.locationPhoto[0] ?? null%}
+		{% for entry in craft.entries.section('locations') %}
+	  {% set item = craft.shortlist.item(entry.id) %}
+		{% set image = entry.locationPhoto[0] ?? null%}
 
-		{% include "_blocks/_locations"	%}
+			{% include "_blocks/_locations"	%}
 
-	{% endfor %}
+		{% endfor %}
 
 	</div>
 
