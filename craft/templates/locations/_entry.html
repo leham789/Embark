@@ -114,8 +114,6 @@
 
     {{ craft.comments.form(entry.id, params) }}
 
-
-
 	</div>
 
 	<div id="map">
@@ -142,7 +140,7 @@
 
 		var destinationLongitude = {{ entry.map.lng }}
 		var destinationLatitude = {{ entry.map.lat }}
-		var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(2)
+		var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(1)
 
 		console.log(
 			finalmiles

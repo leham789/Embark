@@ -1,4 +1,4 @@
-{% extends "_layout" %}
+{% extends "_layouts/_layout" %}
 {% set title = "Search Results" %}
 {% requireLogin %}
 {% block content %}
@@ -11,7 +11,7 @@
   {% set entries = craft.entries.search(query).order('score') %}
 
   {% if entries|length %}
-      <p>{{ entries|length }} results:</p>
+      <!-- <p>{{ entries|length }} results:</p> -->
 
 			<div class="location-list">
 

@@ -1,0 +1,30 @@
+{% extends "_layouts/_layout" %}
+{% set title = "Near Me" %}
+{% requireLogin %}
+{% block content %}
+
+<div class="container compensator">
+
+	<h1 class="page-title">Near Me</h1>
+
+	<div class="location-list">
+
+		{% for entry in craft.entries.section('locations') %}
+		{% set item = craft.shortlist.item(entry.id) %}
+		{% set image = entry.locationPhoto[0] ?? null%}
+
+			{% include "_blocks/_locations"	%}
+
+		{% endfor %}
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+{% endblock %}

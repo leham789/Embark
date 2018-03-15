@@ -1,11 +1,11 @@
-<div class="locations">
+<div class="locations" id="{{ item.element.id }}">
 
 		<div class="loc-img" style="background-image:url({{ item.element.locationPhoto[0].url }})">
 
       <div class="loc-img-inside">
 
         <div class="loc-dist">
-          <p class="loc-distance" id="{{ item.element.id }}"></p>
+          <p class="loc-distance"></p>
         </div>
 
         <div class="loc-fav">
@@ -102,7 +102,10 @@
 </div>
 
 
-<script type="text/javascript">
+
+
+
+<script>
   function CalcDistanceBetween(lat1, lon1, lat2, lon2) {
     var R = 3958.7558657440545;
     var dLat = toRad(lat2-lat1);
@@ -121,7 +124,7 @@
 
   var destinationLongitude = {{ entry.map.lng }}
   var destinationLatitude = {{ entry.map.lat }}
-  var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(2)
+  var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(1)
 
   console.log(
     finalmiles
@@ -130,5 +133,16 @@
 	var id = {{ item.element.id }}
 
   var output = document.getElementById(id);
-  output.innerHTML = finalmiles + ' miles away';
+  output.getElementsByClassName("loc-distance")[0].innerHTML = finalmiles + ' miles away';
+	output.setAttribute('data-distance', finalmiles);
+
+
+	//sorts each location into order
+	$(".locations").sort(function (a, b) {
+		return parseInt(a.getAttribute('data-distance')) > parseInt(b.getAttribute('data-distance'));
+	}).each(function(){
+		var elem = $(this);
+		elem.remove();
+		$(elem).appendTo(".location-list");
+	})
 </script>

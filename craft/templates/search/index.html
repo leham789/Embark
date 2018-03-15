@@ -1,4 +1,4 @@
-{% extends "_layout" %}
+{% extends "_layouts/_layout" %}
 {% set title = "Search" %}
 {% requireLogin %}
 {% block content %}
@@ -36,7 +36,7 @@
 					strokeWeight: 0
 				};
 
-			'{% for entry in craft.entries.section('locations') %}'
+			'{% for entry in craft.entries.section('locations').limit(100) %}'
 
 			 var marker = new google.maps.Marker({
 		   		position: new google.maps.LatLng({{ entry.map.lat }}, {{ entry.map.lng }}),
