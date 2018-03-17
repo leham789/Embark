@@ -5,7 +5,6 @@
 
 {% set image = entry.locationPhoto.first() %}
 
-
 <div class="location-page">
 
 	<div class="loc-img" style="background-image:url({{ image.getURL() }})">
@@ -39,53 +38,62 @@
 
 	</div>
 
-	<div class="container">
+	<div class="container container-loc">
 
 		<div class="loc-topbar">
 
-			<div class="loc-topbar-info">
+			<div class="loc-topbar-title">
 
 				<h1>{{ entry.title }}</h1>
-				{% for category in entry.locationType %}
-					<h1>{{ category.title }}</h1>
-				{% endfor %}
 
 			</div>
 
-			<div class="loc-topbar-rating">
+			<div class="location-topbar-bottom">
 
-				<div class="star-ratings">
-					{% set averageRating = craft.commentsrating.elementRating(entry.id) %}
-					{% set averageRatingBlank = 5 - averageRating %}
+				<div class="loc-topbar-info">
 
-					{% if averageRating > '0' %}
+					{% for category in entry.locationType %}
+						<p class="loc-cat-title">{{ category.title }}</p>
+					{% endfor %}
 
-						{% for star in 1..averageRating %}
+				</div>
 
-								<div class="icon-star is-active"></div>
+				<div class="loc-topbar-rating">
 
-						{% endfor %}
+					<div class="star-ratings">
+						{% set averageRating = craft.commentsrating.elementRating(entry.id) %}
+						{% set averageRatingBlank = 5 - averageRating %}
 
-						{% if averageRating < 5 %}
+						{% if averageRating > '0' %}
 
-							{% for star in 1..averageRatingBlank %}
+							{% for star in 1..averageRating %}
 
-									<div class="icon-star"></div>
+									<div class="icon-star is-active"></div>
 
 							{% endfor %}
 
+							{% if averageRating < 5 %}
+
+								{% for star in 1..averageRatingBlank %}
+
+										<div class="icon-star"></div>
+
+								{% endfor %}
+
+							{% endif %}
+
 						{% endif %}
 
-					{% endif %}
+						{% if averageRating == 0 %}
+						<div class="icon-star is-active"></div>
+						<div class="icon-star is-active"></div>
+						<div class="icon-star is-active"></div>
+						<div class="icon-star"></div>
+						<div class="icon-star"></div>
 
-					{% if averageRating == 0 %}
-					<div class="icon-star is-active"></div>
-					<div class="icon-star is-active"></div>
-					<div class="icon-star is-active"></div>
-					<div class="icon-star"></div>
-					<div class="icon-star"></div>
+						{% endif %}
 
-					{% endif %}
+					</div>
 
 				</div>
 
@@ -94,31 +102,51 @@
 		</div>
 
 		<div class="website-btn">
-			<a href="{{ entry.locationWebsite }}" target="_blank" title="{{ entry.title }}">Visit Website</a>
+			<a href="{{ entry.locationWebsite }}" target="_blank" title="{{ entry.title }} Website">Visit Website</a>
 		</div>
 
-		<p>{{ entry.locationOverview }}</p>
+		<div class="direction-btn">
+			<a href="{{ entry.locationWebsite }}" target="_blank" title="{{ entry.title }} Website">Get Directions</a>
+		</div>
 
-		<p>{{ entry.locationNumber }}</p>
+		<div class="greybox-overview">
 
-		<p>{{ entry.map }}</p>
+			<h1>Overview</h1>
 
-		<p>{{ entry.map.lat }}, {{ entry.map.lng }}</p>
+			<div class="greybox-inside">
 
-		<p id="loc-distance"></p>
+				<div class="greybox-left">
+					<p class="location-adress">{{ entry.map }}</p>
+				</div>
 
+				<div class="greybox-right">
+					<a href="tel:{{ entry.locationNumber }}" title="{{ entry.locationNumber }}">{{ entry.locationNumber }}</a>
+					<p id="loc-distance"></p>
+				</div>
 
-		{% set params = {
-        order: 'dateCreated asc',
-    } %}
+			</div>
 
-    {{ craft.comments.form(entry.id, params) }}
+		</div>
+
+		<div class="greybox-reviews">
+			{% set params = { order: 'dateCreated asc', } %}
+	    {{ craft.comments.form(entry.id, params) }}
+		</div>
 
 	</div>
 
-	<div id="map">
 
-	</div>
+	<div class="white-gradient"></div>
+	<div id="map"></div>
+
+
+
+	<script>
+		var paragraphs = document.querySelectorAll('.greybox-left p');
+		for (var i = 0; i < paragraphs.length; i++) {
+			paragraphs[i].innerHTML = paragraphs[i].innerHTML.replace(/,/g, "<br />");
+		}
+	</script>
 
 
 	<script type="text/javascript">
@@ -192,6 +220,5 @@
 	</script>
 
 </div>
-
 
 {% endblock %}

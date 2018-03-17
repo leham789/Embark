@@ -139,26 +139,19 @@
 				    var d = R * c;
 				    return d;
 				  }
-
 				  function toRad(Value) {
 				      return Value * Math.PI / 180;
 				  }
-
 				  var destinationLongitude = {{ item.element.map.lng }}
 				  var destinationLatitude = {{ item.element.map.lat }}
 				  var finalmiles = CalcDistanceBetween(lat, lon, destinationLatitude, destinationLongitude).toFixed(1)
-
 				  console.log(
 				    finalmiles
 				  );
-
 					var id = {{ item.element.id }}
-
 					var output = document.getElementById(id);
 				  output.getElementsByClassName("loc-distance")[0].innerHTML = finalmiles + ' miles away';
 					output.setAttribute('data-distance', finalmiles);
-
-
 					//sorts each location into order
 					$(".locations").sort(function (a, b) {
 						return parseInt(a.getAttribute('data-distance')) > parseInt(b.getAttribute('data-distance'));

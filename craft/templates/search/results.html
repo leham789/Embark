@@ -5,13 +5,13 @@
 
 <div class="container compensator">
 
-	<h1 class="page-title">Search Results</h1>
-
   {% set query = craft.request.getParam('q') %}
   {% set entries = craft.entries.search(query).order('score') %}
 
   {% if entries|length %}
-      <!-- <p>{{ entries|length }} results:</p> -->
+
+	<h1 class="page-title">{{ entries|length }} Search Results for {{ query }}</h1>
+
 
 			<div class="location-list">
 
@@ -28,10 +28,8 @@
 			</div>
 
   {% else %}
-      <p>Your search for “{{ query }}” didn’t return any results.</p>
+      <h1 class="page-title">sorry. Your search for “{{ query }}” didn’t return any results.</h1>
   {% endif %}
-
-	{{ entry.body }}
 
 </div>
 

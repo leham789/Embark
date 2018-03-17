@@ -1,7 +1,41 @@
 <ul class="comments-list">
     {% nav comment in comments %}
         <li class="comment-single" id="comment-{{ comment.id }}" data-id="{{ comment.id }}" itemprop="comment" itemscope itemtype="http://schema.org/UserComments">
-          {{ craft.commentsrating.commentRating(comment.id) }}
+
+
+          <div class="star-ratings">
+            {% set averageRating = craft.commentsrating.commentRating(comment.id) %}
+            {% set averageRatingBlank = 5 - averageRating %}
+
+            {% if averageRating > '0' %}
+
+              {% for star in 1..averageRating %}
+
+                  <div class="icon-star is-active"></div>
+
+              {% endfor %}
+
+              {% if averageRating < 5 %}
+
+                {% for star in 1..averageRatingBlank %}
+
+                    <div class="icon-star"></div>
+
+                {% endfor %}
+
+              {% endif %}
+
+            {% endif %}
+
+            {% if averageRating == 0 %}
+            <div class="icon-star is-active"></div>
+            <div class="icon-star is-active"></div>
+            <div class="icon-star is-active"></div>
+            <div class="icon-star"></div>
+            <div class="icon-star"></div>
+
+            {% endif %}
+          </div>
 
             {# Get the comment template depending on status #}
             {% include '_forms/templates/comment-' ~ comment.status %}

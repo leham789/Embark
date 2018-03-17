@@ -44,7 +44,7 @@
     {% endif %}
 
     <div class="form-group comment-input">
-        <textarea class="form-control" name="fields[comment]" placeholder="Your comments">
+        <textarea class="form-control" name="fields[comment]" maxlength="400" placeholder="Review This Dog Friendly Location...">
             {{- attribute(activeComment, 'comment') | trim -}}
         </textarea>
 
@@ -55,16 +55,24 @@
         {% endif %}
     </div>
 
-    <label>Rating</label>
-    <select name="fields[commentsRating]">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
+    <div class="rating-container">
+
+      <div class="comment-rating-box">
+
+        <select name="fields[commentsRating]" class="rating-selection">
+          <option value="1">★</option>
+          <option value="2">★★</option>
+          <option value="3" selected="selected">★★★</option>
+          <option value="4">★★★★</option>
+          <option value="5">★★★★★</option>
+        </select>
+
+      </div>
+
+    </div>
+
 
     <div class="form-group comment-input-btn">
-        <button type="submit" class="btn btn-default">Add Comment</button>
+        <button type="submit" class="btn btn-default">Review Location</button>
     </div>
 </form>
