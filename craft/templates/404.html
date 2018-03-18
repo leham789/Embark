@@ -2,13 +2,17 @@
 {% set title = "404" %}
 {% block content %}
 
-<div class="container compensator">
-
-	<h1>404</h1>
+<div class="container compensator small-container error-page">
 
   <img src="https://media.giphy.com/media/S2a3xYDeV5jdC/giphy.gif" alt="404 Page Dog Gif">
 
+	<h1>404</h1>
+
 	<p>Here's a funny dog GIF to make you smile.</p>
+
+	<div class="error-btn">
+		<a href="{{ url('') }}" title="Explore Page">Walk Me Home</a>
+	</div>
 
 </div>
 

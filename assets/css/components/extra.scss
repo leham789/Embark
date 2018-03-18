@@ -1,0 +1,33 @@
+.error-page{
+
+  text-align: center;
+
+  img{
+    margin-top: 20px;
+    width: 100%;
+  }
+  h1{
+    margin: 10px;
+    font-size: 30px;
+  }
+  .error-btn{
+    width: 300px;
+    background-image: $brand-gradient;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+
+    a{
+      padding: 20px;
+      display: block;
+      color: $white;
+      text-decoration: none;
+
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+}
