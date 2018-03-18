@@ -20,14 +20,21 @@
   height: 320px;
   background: $brand-gradient;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  margin: 110px 0 45px 0;
+  margin: 0px 0 45px 0;
   padding-bottom: 0px;
+  padding-top: -200px;
   transition: all 0.2s ease-in-out;
 
   .explore-title{
     color:$white;
     margin-top: 0px;
   }
+}
+
+.scroller-colour{
+  height: 110px;
+  width: 100%;
+  background: $brand-gradient;
 }
 
 .scroller-title{

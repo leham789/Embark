@@ -1,64 +1,53 @@
-.profile-header{
-  display: block;
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 1000;
-
-  h1{
-    color: $white;
-    padding: 0px;
-    text-align: left;
-    margin: 0px;
-  }
-  .profile-header-left{
-    width: 50%;
-    float: left;
-    padding-top: 20px;
-  }
-  .profile-header-right{
-    width: 50%;
-    float: left;
-    text-align: right;
-    padding-top: 20px;
-
-    a{
-      padding-top: 4px;
-    }
-  }
-}
-
-
 .profile-page{
+  padding-top: 20px;
 
   .profile-picture{
-    width: 100%;
-  }
-  img{
     width: 200px;
     height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 50%;
-    z-index: 1000;
-    margin-top: -100px!important;
-    border: 2px solid white;
-    display: block;
-    position: relative;
-    text-align: center;
     margin: 0 auto;
   }
+  .user-title{
+    text-align: center;
+
+    h1{
+      margin: 20px 0 10px 0;
+    }
+    p{
+      opacity: 0.6;
+      margin: 0px;
+    }
+  }
+
   .logout-btn{
     padding: 0;
     background-color: transparent;
     border: 0px;
   }
+
+
+  .greybox-profile{
+    background: $white;
+    box-shadow: 0 0 7px 0 rgba(192,192,192,0.25);
+    border-radius: 5px;
+    padding: 20px 25px 15px 25px;
+    margin: 20px 0;
+  }
+
+}
+
+.container-profile{
+  max-width: 700px;
+  z-index: 970;
+  margin-bottom: -150px;
 }
 
 
 
 @media screen and (min-width: 768px) {
 
-  .profile-page img{
-    margin-top: 0!important;
-  }
 
 }

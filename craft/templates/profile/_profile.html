@@ -1,4 +1,4 @@
-{% extends "_layouts/_profilelayout" %}
+{% extends "_layouts/_layout" %}
 {% set title = user.username %}
 {% requireLogin %}
 {% block content %}
@@ -10,29 +10,23 @@
 
 {% set search = user %}
 
-<div class="container compensator">
+<div class="compensator">
 
-  <div class="profile-page">
+  <div class="profile-page container container-profile">
 
-  <img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+    <div class="profile-picture" style="background-image:url({{ user.getPhotoUrl(500) }})">
+    </div>
 
+    <div class="user-title">
+      <h1>{{ currentUser}}</h1>
+      <p>{{ user.email }}</p>
+    </div>
 
-    {% if currentUser %}
-        <p>{{ currentUser}}</p>
-        <button onclick="window.localStorage.clear();" class="logout-btn">
-          <a href="{{ url('logout') }}">Logout</a>
-        </button>
-    {% else %}
-        <a href="{{ url('login') }}">Login</a>
-    {% endif %}
+    <div class="greybox-profile">
 
-    {{ entry.body }}
+      <a href="{{ currentUser.username }}/settings">settings</a>
 
-    <p>{{ user.fullname }}</p>
-    <p>{{ user.email }}</p>
-    <p>{{ user.userBio }}</p>
-
-    <a href="{{ currentUser.username }}/settings">settings</a>
+    </div>
 
   </div>
 

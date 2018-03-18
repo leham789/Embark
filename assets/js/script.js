@@ -39,6 +39,10 @@ $(function(){
     });
 })();
 
+//Disable Scroll Out
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
 
 //Scroll Reveal
 window.sr = new ScrollReveal();

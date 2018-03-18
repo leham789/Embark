@@ -30308,13 +30308,6 @@
 		"oAP": "\/craft\/templates\/_layouts\/_loginlayout.html",
 		"oF": 0
 		},
-	"\/craft\/templates\/_layouts\/_profilelayout.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/craft\/templates\/_layouts\/_profilelayout.html",
-		"oF": 0
-		},
 	"\/craft\/templates\/favourites.html": {
 		"cB": 0,
 		"ft": 8192,
