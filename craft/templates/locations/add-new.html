@@ -1,0 +1,126 @@
+{% extends "_layouts/_layout" %}
+{% set title = "New Location" %}
+{% requireLogin %}
+{% block content %}
+
+<div class="compensator">
+
+  <div class="profile-page container small-container">
+
+    <div class="greybox-profile">
+
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors">
+                {% for error in errors %}
+                    <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
+
+    {% from _self import errorList %}
+
+    <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+        {{ getCsrfInput() }}
+        <input type="hidden" name="action" value="entries/saveEntry">
+        <input type="hidden" name="redirect" value="locations/{slug}">
+        <input type="hidden" name="sectionId" value="4">
+        <input type="hidden" name="enabled" value="1">
+        <input type="hidden" name="fields[featured]" value="0">
+
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title" required {%- if entry is defined %} value="{{ entry.title }}"{% endif -%}>
+
+        </br>
+        <input type="file" name="fields[locationPhoto]" required>
+
+        </br>
+        <label for="locationType">Type of Location</label>
+        <select id="locationType" name="fields[locationType][]" required>
+          <option value="" selected=""></option>
+          {% for category in craft.categories.group('type') %}
+             <option value="{{ category.id }}">{{ category.title }}</option>
+          {% endfor %}
+        </select>
+
+        </br>
+        <label for="locationNumber">Number</label>
+        <input id="locationNumber" type="tel" name="fields[locationNumber]" required>
+        </input>
+
+        </br>
+        <label for="locationWebsite">Website</label>
+        <input id="locationWebsite" type="url" name="fields[locationWebsite]" required>
+        </input>
+
+        </br>
+        <label for="County">County</label>
+        <select id="County" name="fields[locationCounty]" required>
+          <option value="" selected=""></option>
+			    <option value="bedfordshire">Bedfordshire</option>
+					<option value="berkshire">Berkshire</option>
+					<option value="bristol">Bristol</option>
+					<option value="buckinghamshire">Buckinghamshire</option>
+					<option value="cambridgeshire">Cambridgeshire</option>
+					<option value="cheshire">Cheshire</option>
+					<option value="cleveland">Cleveland</option>
+					<option value="cornwall">Cornwall</option>
+					<option value="cumbria">Cumbria</option>
+					<option value="derbyshire">Derbyshire</option>
+					<option value="devon">Devon</option>
+					<option value="dorset">Dorset</option>
+					<option value="durham">Durham</option>
+					<option value="eastRidingOfYorkshire">East Riding of Yorkshire</option>
+					<option value="eastSussex">East Sussex</option>
+					<option value="essex">Essex</option>
+					<option value="gloucestershire">Gloucestershire</option>
+					<option value="greaterLondon">Greater London</option>
+					<option value="greaterManchester">Greater Manchester</option>
+					<option value="hampshire">Hampshire</option>
+					<option value="hertfordshire">Hertfordshire</option>
+					<option value="isleOfWight">Isle of Wight</option>
+					<option value="kent">Kent</option>
+					<option value="lancashire">Lancashire</option>
+					<option value="leicestershire">Leicestershire</option>
+					<option value="lincolnshire">Lincolnshire</option>
+					<option value="merseyside">Merseyside</option>
+					<option value="norfolk">Norfolk</option>
+					<option value="northYorkshire">North Yorkshire</option>
+					<option value="northamptonshire">Northamptonshire</option>
+					<option value="northumberland">Northumberland</option>
+					<option value="nottinghamshire">Nottinghamshire</option>
+					<option value="oxfordshire">Oxfordshire</option>
+					<option value="rutland">Rutland</option>
+					<option value="shropshire">Shropshire</option>
+					<option value="somerset">Somerset</option>
+					<option value="southYorkshire">South Yorkshire</option>
+					<option value="staffordshire">Staffordshire</option>
+					<option value="suffolk">Suffolk</option>
+					<option value="surrey">Surrey</option>
+					<option value="tyneAndWear">Tyne and Wear</option>
+					<option value="warwickshire">Warwickshire</option>
+					<option value="westBerkshire">West Berkshire</option>
+					<option value="westMidlands">West Midlands</option>
+					<option value="westSussex">West Sussex</option>
+					<option value="westYorkshire">West Yorkshire</option>
+					<option value="wiltshire">Wiltshire</option>
+					<option value="worcestershire">Worcestershire</option>
+          </select>
+
+        </br>
+        <label for="mapinput">Adress</label>
+        <input id="mapinput" name="fields[map][address]" required>
+        </input>
+
+        </br>
+        <input type="submit" value="Publish">
+    </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}
