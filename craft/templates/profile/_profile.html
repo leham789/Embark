@@ -22,10 +22,27 @@
       <p>{{ user.email }}</p>
     </div>
 
-    <div class="greybox-profile">
+    <div class="greybox-profile profile-box">
 
-      <a href="{{ url('locations/add-new') }}">Add Location</a>
-      <a href="{{ currentUser.username }}/settings">settings</a>
+      <ul class="profile-list">
+        <li>
+          <a href="{{ url('locations/add-new') }}">Add Location
+            <img class="svg" src="{{ siteUrl }}assets/img/general/add.svg" alt="explore"/>
+          </a>
+        </li>
+        <li>
+          <a href="{{ currentUser.username }}/settings">Settings
+            <img class="svg" src="{{ siteUrl }}assets/img/general/settings.svg" alt="explore"/>
+          </a>
+        </li>
+        <li>
+          <button onclick="window.localStorage.clear();" class="logout-btn">
+            <a href="{{ url('logout') }}">Logout
+              <img class="svg" src="{{ siteUrl }}assets/img/general/logout.svg" alt="explore"/>
+            </a>
+          </button>
+        </li>
+      </ul>
 
 
     </div>

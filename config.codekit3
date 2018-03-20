@@ -296,11 +296,11 @@
 		"oAP": "\/assets\/fonts\/Gilroy-Medium.woff",
 		"oF": 0
 		},
-	"\/assets\/img\/general\/add.svg": {
+	"\/assets\/img\/general\/Add.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/assets\/img\/general\/add.svg",
+		"oAP": "\/assets\/img\/general\/add_180320_015155.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -397,6 +397,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/general\/Logout.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/general\/Logout.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/general\/profile-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -442,6 +452,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/assets\/img\/general\/search-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/img\/general\/Settings.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/general\/Settings.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -28927,16 +28947,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/151.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/151.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/156.jpg": {
 		"ft": 16384,
 		"iS": 515,
@@ -29036,6 +29046,36 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/198.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/198.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/199.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/199.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/203.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/203.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/26.svg": {
 		"ft": 2097152,
