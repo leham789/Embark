@@ -7,20 +7,25 @@
 
 <div class="compensator">
 
-	<div class="profile-page container small-container">
+	<div class="profile-page forms container small-container">
 
 		<div class="greybox-profile">
+
+			<h1 class="page-title">Settings</h1>
 
 			<!-- Update photo -->
 		  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
 				<input type="hidden" name="action" value="users/saveUser">
 				<input type="hidden" name="redirect" value="profile/{{ currentUser.username }}/settings">
 				<input type="hidden" name="userId" value="{{ currentUser.id }}">
+				<input type="hidden" name="password" value="{{ currentUser.password }}">
 
 				{% if currentUser.photoUrl %}
-				<img src="{{ user.getPhotoUrl(500) }}" alt="{{ user.fullname }} profile picture">
+				<div class="profile-picture" style="background-image:url({{ user.getPhotoUrl(500) }})">
+		    </div>
 				{% else %}
-					<img  src="{{ siteUrl }}assets/img/general/profile-icon.svg"/>
+				<div class="profile-picture" style="background-image:url(https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg)">
+				</div>
 				{% endif %}
 
 				{% if currentUser.photoUrl %}
@@ -33,8 +38,6 @@
 
 		  </form>
 
-			<h1>Settings</h1>
-
 			{% if currentUser.photoUrl %}
 				<form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
 						{{ getCsrfInput() }}
@@ -44,13 +47,11 @@
 
 						<input type="hidden" name="deleteUserPhoto" value="1" />
 
-						<input type="submit" value="Delete Photo">
+						<input type="submit" class="input-button" value="Delete Photo">
 				</form>
 			{% else %}
 
 			{% endif %}
-
-
 
 		  <form method="post" accept-charset="UTF-8" enctype="multipart/form-data">
 		      {{ getCsrfInput() }}
@@ -58,21 +59,28 @@
 		      <input type="hidden" name="redirect" value="profile/{{ currentUser.username }}">
 		      <input type="hidden" name="userId" value="{{ currentUser.id }}">
 
-					<!-- Update Bio -->
-		      <label for="bio">Bio</label>
-		      <textarea id="bio" name="fields[userBio]">{{ currentUser.userBio }}</textarea>
-		      <input type="submit" value="Save Profile">
+					<label for="firstName" class="hidden">{{ "First Name"|translate }}</label>
+        <input type="text" name="firstName" id="firstName" placeholder="{{ "First Name"|translate }}" value="{{ currentUser.firstName }}">
+
+				<label for="lastName" class="hidden">{{ "Last Name"|translate }}</label>
+				<input type="text" name="lastName" id="lastName" placeholder="{{ "Last Name"|translate }}" value="{{ currentUser.lastName }}">
+
+				<label for="email" class="hidden">email</label>
+		    <input type="email" name="email" id="email" placeholder="{{ "Email"|translate }}" value="{{ currentUser.email }}">
+
+				<label for="password" class="hidden">Enter Password to apply changes</label>
+				<input type="password" name="password" placeholder="Password" required>
+
+		    <input type="submit" class="publish-form" value="Save Profile">
 		  </form>
 
-
-
 			<!-- Delete Account -->
-			<form method="post" accept-charset="UTF-8">
+			<form method="post" accept-charset="UTF-8" class="delete-account-form">
 			  {{ getCsrfInput() }}
 			  <input type="hidden" name="action" value="users/deleteUser">
 			  <input type="hidden" name="redirect" value="account/delete/success">
 			  <input type="hidden" name="userId" value="{{ currentUser.id }}">
-			  <button type="submit" class="" style="color:red;">Delete my account!</button>
+			  <button type="submit" class="delete-account">Delete account!</button>
 			</form>
 
 		</div>
@@ -80,7 +88,5 @@
 	</div>
 
 </div>
-
-
 
 {% endblock %}

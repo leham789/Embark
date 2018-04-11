@@ -18,16 +18,10 @@ return array(
 		'database' => 'embark',
     'port' => '8888'
 	),
-	'liam-dean.com' => array(
+	'dev.embarkapp.co.uk' => array(
 		'server' => 'localhost',
-		'user' => 'liamd_portfolio',
+		'user' => 'liamd_embarkapp',
 		'password' => 'Hullcity789',
-		'database' => 'liamdean_portfolio'
-	),
-	'dev.liam-dean.com' => array(
-		'server' => '127.0.0.1',
-		'user' => 'liamd_portfolio',
-		'password' => 'Hullcity789',
-		'database' => 'liamdean_devportfolio'
+		'database' => 'liamdean_embarkapp'
 	),
 );

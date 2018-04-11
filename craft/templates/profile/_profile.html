@@ -14,8 +14,13 @@
 
   <div class="profile-page container small-container">
 
+    {% if currentUser.photoUrl %}
     <div class="profile-picture" style="background-image:url({{ user.getPhotoUrl(500) }})">
     </div>
+    {% else %}
+    <div class="profile-picture" style="background-image:url(https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg)">
+    </div>
+    {% endif %}
 
     <div class="user-title">
       <h1>{{ currentUser}}</h1>
@@ -27,18 +32,18 @@
       <ul class="profile-list">
         <li>
           <a href="{{ url('locations/add-new') }}">Add Location
-            <img class="svg" src="{{ siteUrl }}assets/img/general/add.svg" alt="explore"/>
+            <img class="svg" src="{{ siteUrl }}assets/img/general/Add.svg" alt="explore"/>
           </a>
         </li>
         <li>
           <a href="{{ currentUser.username }}/settings">Settings
-            <img class="svg" src="{{ siteUrl }}assets/img/general/settings.svg" alt="explore"/>
+            <img class="svg" src="{{ siteUrl }}assets/img/general/Settings.svg" alt="explore"/>
           </a>
         </li>
         <li>
           <button onclick="window.localStorage.clear();" class="logout-btn">
             <a href="{{ url('logout') }}">Logout
-              <img class="svg" src="{{ siteUrl }}assets/img/general/logout.svg" alt="explore"/>
+              <img class="svg" src="{{ siteUrl }}assets/img/general/Logout.svg" alt="explore"/>
             </a>
           </button>
         </li>

@@ -5,9 +5,11 @@
 
 <div class="compensator">
 
-  <div class="profile-page container small-container">
+  <div class="profile-page forms container small-container">
 
     <div class="greybox-profile">
+
+      <h1 class="page-title">Add New Location</h1>
 
     {% macro errorList(errors) %}
         {% if errors %}
@@ -29,11 +31,12 @@
         <input type="hidden" name="enabled" value="1">
         <input type="hidden" name="fields[featured]" value="0">
 
-        <label for="title">Title</label>
-        <input id="title" type="text" name="title" required {%- if entry is defined %} value="{{ entry.title }}"{% endif -%}>
+        <label for="title">Location Name</label>
+        <input id="title" type="text" placeholder="Location Title" name="title" required {%- if entry is defined %} value="{{ entry.title }}"{% endif -%}>
 
         </br>
-        <input type="file" name="fields[locationPhoto]" required>
+        <label for="file">Location Image</label>
+        <input type="file" placeholder="Location Image" name="fields[locationPhoto]" required>
 
         </br>
         <label for="locationType">Type of Location</label>
@@ -45,13 +48,13 @@
         </select>
 
         </br>
-        <label for="locationNumber">Number</label>
-        <input id="locationNumber" type="tel" name="fields[locationNumber]" required>
+        <label for="Number">Number</label>
+        <input id="locationNumber" placeholder="Location Number" type="tel" name="fields[locationNumber]" required>
         </input>
 
         </br>
-        <label for="locationWebsite">Website</label>
-        <input id="locationWebsite" type="url" name="fields[locationWebsite]" required>
+        <label for="Website">Website</label>
+        <input id="locationWebsite" placeholder="Location Website URL" type="url" name="fields[locationWebsite]" required>
         </input>
 
         </br>
@@ -109,12 +112,12 @@
           </select>
 
         </br>
-        <label for="mapinput">Adress</label>
-        <input id="mapinput" name="fields[map][address]" required>
+        <label for="mapinput">Address</label>
+        <input id="mapinput" placeholder="Location Full Address" name="fields[map][address]" required>
         </input>
 
         </br>
-        <input type="submit" value="Publish">
+        <input class="publish-form" type="submit" value="Publish Location">
     </form>
 
     </div>

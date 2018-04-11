@@ -28,18 +28,10 @@ return array(
     )
   ),
 
-  'liam-dean.com' => array(
-    'environmentVariables' => array(
-      'basePath' => '/httpdocs/',
-      'baseUrl'  => 'https://embarkapp.com/',
-      'cacheDuration' => 'P1W'
-    )
-  ),
-
-  'dev.liam-dean.com' => array(
+  'dev.embarkapp.co.uk' => array(
     'environmentVariables' => array(
       'basePath' => '/dev/',
-      'baseUrl'  => 'http://dev.embarkapp.com/',
+      'baseUrl'  => 'https://dev.embarkapp.co.uk/',
       'devMode' => true
     )
   )
