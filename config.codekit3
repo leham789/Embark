@@ -30358,6 +30358,13 @@
 		"oAP": "\/craft\/templates\/_blocks\/_locationscroll.html",
 		"oF": 0
 		},
+	"\/craft\/templates\/_blocks\/pwa.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/templates\/_blocks\/pwa.html",
+		"oF": 0
+		},
 	"\/craft\/templates\/_forms\/templates\/comment-approved.html": {
 		"cB": 0,
 		"ft": 8192,
