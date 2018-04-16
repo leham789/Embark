@@ -330,17 +330,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/img\/general\/App-Icon_180416_161642.png": {
-		"ft": 32768,
-		"iS": 281291,
-		"oA": 0,
-		"oAP": "\/assets\/img\/general\/App-Icon_180416_161642.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/assets\/img\/general\/App-Launch.png": {
 		"ft": 32768,
 		"iS": 248975,
@@ -551,6 +540,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/js\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/stay_standalone.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/stay_standalone-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -29201,6 +29200,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/215.png": {
+		"ft": 32768,
+		"iS": 1398,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/assets\/thumbs\/30\/215.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/craft\/storage\/runtime\/assets\/thumbs\/30\/216.png": {
 		"ft": 32768,
