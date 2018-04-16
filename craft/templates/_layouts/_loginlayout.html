@@ -9,6 +9,14 @@
 	{% set favicon = site.siteFavicon.image.first() %}
 	<link rel="icon" href="{{ siteUrl }}{{ favicon.url }}">
 
+
+	<link rel="apple-touch-icon" href="{{ siteUrl }}assets/img/general/App-Icon.png">
+	<link rel="apple-touch-startup-image" sizes="640x960" href="{{ siteUrl }}assets/img/general/splash-screen-640x960.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Embark">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
 	<meta name="description" content="{{ site.siteDescription }}">
 	<meta name="keywords" content="{% for tag in site.siteKeywords %}{{ tag }}, {% endfor %}">
 	<meta name="author" content="{{ site.siteAuthor }}">
