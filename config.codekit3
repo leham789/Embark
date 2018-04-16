@@ -544,6 +544,16 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/stay_standalone-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/stay_standalone-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/js\/stay_standalone.js": {
 		"ft": 64,
 		"ma": 0,
@@ -30256,6 +30266,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/craft\/storage\/userphotos\/Sarah95\/100\/me.png": {
+		"ft": 32768,
+		"iS": 11582,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/userphotos\/Sarah95\/100\/me.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/craft\/storage\/userphotos\/Sarah95\/500\/me.png": {
