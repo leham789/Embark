@@ -413,6 +413,83 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/assets\/img\/general\/launch-1125x2436.png": {
+		"ft": 32768,
+		"iS": 51236,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-1125x2436.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-1242x2148.png": {
+		"ft": 32768,
+		"iS": 50823,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-1242x2148.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-1536x2048.png": {
+		"ft": 32768,
+		"iS": 51317,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-1536x2048.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-1668x2224.png": {
+		"ft": 32768,
+		"iS": 53978,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-1668x2224.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-2048x2732.png": {
+		"ft": 32768,
+		"iS": 62979,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-2048x2732.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-640x1136.png": {
+		"ft": 32768,
+		"iS": 24496,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-640x1136.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/general\/launch-750x1294.png": {
+		"ft": 32768,
+		"iS": 26207,
+		"oA": 0,
+		"oAP": "\/assets\/img\/general\/launch-750x1294.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/general\/logo-white.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -29911,6 +29988,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/b9\/b9f9659dc6885c8dcd087ce3f15532e39cbe93be13d1f851143c25a926151274.php",
+		"oF": 0
+		},
+	"\/craft\/storage\/runtime\/compiled_templates\/ba\/ba7acb8619353f5047a6734d39d144a00b90fe4ce3296ab408165c77a4510435.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/craft\/storage\/runtime\/compiled_templates\/ba\/ba7acb8619353f5047a6734d39d144a00b90fe4ce3296ab408165c77a4510435.php",
 		"oF": 0
 		},
 	"\/craft\/storage\/runtime\/compiled_templates\/bc\/bc3e8bd5b211013029652d1b00d20b9056f853132b52a856b25419f410ab56a1.php": {
