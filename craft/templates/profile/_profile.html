@@ -14,6 +14,7 @@
 
   <div class="profile-page container small-container">
 
+  <a href="{{ currentUser.username }}/settings">
     {% if currentUser.photoUrl %}
     <div class="profile-picture" style="background-image:url({{ user.getPhotoUrl(500) }})">
     </div>
@@ -21,6 +22,8 @@
     <div class="profile-picture" style="background-image:url(https://pbs.twimg.com/profile_images/378800000822867536/3f5a00acf72df93528b6bb7cd0a4fd0c.jpeg)">
     </div>
     {% endif %}
+
+    </a>
 
     <div class="user-title">
       <h1>{{ currentUser}}</h1>
